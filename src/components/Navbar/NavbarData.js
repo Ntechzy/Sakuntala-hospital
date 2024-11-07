@@ -8,11 +8,11 @@ export const navbarData = [
       "link": "/services",
       "submenu": [
         {
-          "label": "Web Development",
+          "label": "Service 1 Here",
           "link": "/services/web-development"
         },
         {
-          "label": "App Development",
+          "label": "Service 2 Here",
           "link": "/services/app-development"
         }
       ]
@@ -22,11 +22,11 @@ export const navbarData = [
       "link": "/about",
       "submenu": [
         {
-          "label": "Web Development",
+          "label": "About 1 Here",
           "link": "/services/web-development"
         },
         {
-          "label": "App Development",
+          "label": "About 2 Here",
           "link": "/services/app-development"
         }
       ]
