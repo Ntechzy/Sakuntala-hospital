@@ -1,22 +1,20 @@
 import React from 'react';
 
-// Sample doctor data
-
-
-const DoctorCard = ({ doctors }) => {
+const DoctorCard = ({ doctor }) => {
   return (
-    <div className="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {doctors.map(doctor => (
-        <div key={doctor.id} className="bg-white rounded-lg shadow-lg p-4">
-          <img 
-            src={doctor.photo} 
-            alt={doctor.name} 
-            className="w-full h-72 object-cover rounded-t-lg hover:transform hover:scale-105 transition-transform duration-300" 
-          />
-          <h3 className="text-xl font-semibold mt-2">{doctor.name}</h3>
-          <p className="text-gray-600">{doctor.type}</p>
-        </div>
-      ))}
+    <div className="bg-white shadow-lg rounded-lg p-4 w-full md:w-1/3 mx-auto mb-6">
+      <img
+        src={doctor.photo}
+        alt={doctor.name}
+        className="w-32 h-32 object-cover rounded-full mx-auto mb-4"
+      />
+      <h3 className="text-xl font-semibold text-center">{doctor.name}</h3>
+      <p className="text-center text-gray-700">{doctor.type}</p>
+      <ul className="mt-2 text-gray-600 text-center">
+        {doctor.details.map((detail, index) => (
+          <li key={index}>{detail}</li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -1,40 +1,59 @@
-import React from 'react'
-import DoctorCard from '../Card/DoctorCard'
+import React from 'react';
+import DoctorCard from '../Card/DoctorCard';
+
 const doctors = [
-    {
-      id: 1,
-      name: "Dr. John Smith",
-      type: "Cardiologist",
-      photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
-    },
-    {
-      id: 2,
-      name: "Dr. Emily Johnson",
-      type: "Dermatologist",
-      photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
-    },
-    {
-      id: 3,
-      name: "Dr. Michael Brown",
-      type: "Pediatrician",
-      photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
-    },
-    {
-      id: 4,
-      name: "Dr. Sarah Davis",
-      type: "Orthopedic Surgeon",
- photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
-    }
-  ];
+  {
+    id: 1,
+    name: "Dr. Ram Avadh Yadav",
+    type: "M.B.B.S., D.C.H (Ex. C.M.O)",
+    details: [
+      "M.B.B.S - 1978",
+      "D.C.H - 1980"
+    ],
+    photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
+  },
+  {
+    id: 2,
+    name: "Dr. Anand Vardhan",
+    type: "M.B.B.S., M.S",
+    details: [
+      "M.B.B.S - 2012",
+      "M.S - 2019"
+    ],
+    photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
+  },
+  {
+    id: 3,
+    name: "Dr. Anshu Kumari",
+    type: "M.B.B.S., D.N.B (Medicine)",
+    details: [
+      "M.B.B.S - 2012",
+      "D.N.B - 2016"
+    ],
+    photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
+  },
+ 
+ 
+ 
+ 
+];
+
+
+
 const OurSpecialist = () => {
   return (
-   <div className='mt-5 bg-slate-100 p-8'>
-     <h1 className='text-3xl font-bold text-center'>Our Specialist</h1>
-     <h2 className='text-xl text-center'>We provide a range of services for every medical need.</h2>
-     <DoctorCard doctors={doctors}/>
+    <div className="mt-5 bg-slate-100 p-8">
+      <h1 className="text-3xl font-bold text-center mb-4">Our Specialist</h1>
+      <h2 className="text-xl text-center mb-8">
+        We provide a range of services for every medical need.
+      </h2>
+      <div className="flex flex-wrap justify-center gap-8">
+        {doctors.map((doctor) => (
+          <DoctorCard doctor={doctor} />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-   </div>
-  )
-}
-
-export default OurSpecialist
+export default OurSpecialist;

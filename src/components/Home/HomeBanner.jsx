@@ -17,17 +17,17 @@ const HomeBanner = () => {
           <div className="flex flex-col space-y-4 mt-3">
             <Link
               to="https://facebook.com"
-              className="flex items-center space-x-2 text-blue-500 hover:text-white transition duration-200"
+              className="flex items-center space-x-2 text-text-[#A83679] hover:text-white transition duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="w-12 h-12 flex items-center justify-center bg-blue-500 rounded-full">
+              <div className="w-12 h-12 flex items-center justify-center bg-text-[#A83679] rounded-full">
                 <FaFacebook className="text-3xl text-white" />
               </div>
             </Link>
             <Link
               to="https://twitter.com"
-              className="flex items-center space-x-2 text-blue-500 hover:text-white transition duration-200"
+              className="flex items-center space-x-2 text-[#A83679] hover:text-white transition duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -37,7 +37,7 @@ const HomeBanner = () => {
             </Link>
             <Link
               to="https://instagram.com"
-              className="flex items-center space-x-2 text-blue-500 hover:text-white transition duration-200"
+              className="flex items-center space-x-2 text-[#A83679] hover:text-white transition duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -47,7 +47,7 @@ const HomeBanner = () => {
             </Link>
             <Link
               to="https://linkedin.com"
-              className="flex items-center space-x-2 text-blue-500 hover:text-white transition duration-200"
+              className="flex items-center space-x-2 text-[#A83679] hover:text-white transition duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >

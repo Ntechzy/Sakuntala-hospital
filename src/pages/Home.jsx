@@ -8,6 +8,7 @@ import WhyChoose from '../components/Home/WhyChoose'
 import OurSpecialist from '../components/Home/OurSpecialist'
 import AppointmentForm from '../components/Home/AppointmentForm'
 import TestimonialCarousel from '../components/Home/TestimonitalCarousel'
+import HomeServices from '../components/Home/HomeServices'
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
         <HomeBanner/>
         <IconCard/>
         <PatternImage/>
+        <HomeServices/>
         <OurDepartment/>
         <WhyChoose/>
         <OurSpecialist/>

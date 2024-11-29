@@ -57,10 +57,10 @@ const Slider = () => {
                 <h1 className="text-4xl font-bold mb-4">{image.title}</h1>
                 <p className="text-lg mb-6">{image.description}</p>
                 <div className="space-x-4">
-                  <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                  <button className="bg-[#A83679]-500 hover:bg-[#A83679]-700 text-white font-bold py-2 px-4 rounded">
                     Learn More
                   </button>
-                  <button className="bg-transparent hover:bg-white text-white hover:text-black font-bold py-2 px-4 border border-white rounded">
+                  <button className="bg-[#A83679] hover:bg-[#82265c] text-white hover:text-white font-bold py-2 px-4 border border-white rounded">
                     Contact Us
                   </button>
                 </div>
@@ -78,8 +78,8 @@ const Slider = () => {
             onClick={() => handleIndicatorClick(index)}
             className={`md:w-16 p-6 mt-3 md:h-16 w-7 h-7 rounded-full border-2 text-3xl border-gray-300 flex items-center justify-center transition duration-300 ${
               currentSlide === index
-                ? "bg-blue-500 border-blue-500 text-white"
-                : "bg-white text-black"
+                ? "bg-[#A83679] border-[#A83679] text-white"
+                : "bg-white text-"
             }`}
           >
             {index + 1}
