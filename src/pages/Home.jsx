@@ -16,12 +16,12 @@ export const Home = () => {
     <div>
         <HomeBanner/>
         <IconCard/>
-        <PatternImage/>
         <HomeServices/>
-        <FAQ/>
-        <OurDepartment/>
+        <PatternImage/>
+        {/* <OurDepartment/> */}
         <WhyChoose/>
         <OurSpecialist/>
+        <FAQ/>
         <AppointmentForm/>
         <TestimonialCarousel/>
     </div>

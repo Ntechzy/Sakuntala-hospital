@@ -22,7 +22,7 @@ const MissionVision = () => {
               <h3 className="text-2xl font-semibold text-gray-800">Our Mission</h3>
             </div>
             <p className="text-gray-600">
-              To deliver innovative solutions that empower businesses and individuals to achieve their goals. We are committed to excellence, integrity, and customer satisfaction in everything we do.
+            To Provide best healthcare services with humanitarian touch.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ const MissionVision = () => {
               <h3 className="text-2xl font-semibold text-gray-800">Our Vision</h3>
             </div>
             <p className="text-gray-600">
-              To be a global leader in our industry, recognized for our innovative approach and unwavering commitment to quality. We aim to create lasting value for our stakeholders and make a positive impact on the communities we serve.
+             To Provide a responsive healing enviorment for patients. To improve quality of life.
             </p>
           </div>
         </div>

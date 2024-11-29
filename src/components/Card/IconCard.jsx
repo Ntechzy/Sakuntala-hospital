@@ -8,7 +8,7 @@ const IconCard = ({ icon, heading, para,hovertext }) => {
       {/* if you are maping this component so before using inside map function remove main div from here and wrap map function with main class */}
 
 
-        <div className='bg-gray-200 p-2 w-full m-auto rounded-md gap-3 grid hover:bg-blue-500  hover:text-white justify-center items-center'>
+        <div className='bg-gray-200 p-2 w-full m-auto rounded-md gap-3 grid hover:bg-pink-700  hover:text-white justify-center items-center'>
            
           {/* Change icon here  */}
           <div className='text-[35px]  group-hover:text-white'>

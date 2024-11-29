@@ -50,14 +50,14 @@ const Slider = () => {
               <img
                 src={image.src}
                 alt={`Slide ${image.id}`}
-                className="w-full h-full object-cover bg-no-repeat border-2 shadow-2xl"
+                className="w-full h-full object-cover p-11 bg-no-repeat border-2 shadow-2xl"
               />
               {/* Overlay Content */}
-              <div className="absolute inset-0 flex flex-col items-start justify-center text-white text-center p-6">
+              <div className="absolute inset-0 flex flex-col pt-60 items-center justify-center text-white text-center p-6">
                 {/* <h1 className="text-4xl font-bold mb-4">{image.title}</h1>
                 <p className="text-lg mb-6">{image.description}</p> */}
                 <div className="space-x-4">
-                  <button className="bg-[#A83679]-500 hover:bg-[#A83679]-700 text-white font-bold py-2 px-4 rounded">
+                  <button className="bg-[#A83679]-500 hover:bg-[#A83679]-700 text-black border-2 font-bold py-2 px-4 rounded">
                     Learn More
                   </button>
                   <button className="bg-[#A83679] hover:bg-[#82265c] text-white hover:text-white font-bold py-2 px-4 border border-white rounded">
