@@ -39,7 +39,7 @@ const TestimonialCarousel = () => {
         backgroundImage: "url('https://www.shutterstock.com/image-photo/smiling-brunette-female-doctor-talking-600nw-2323460383.jpg')",
       }}
     >
-      <div className="absolute top-8 left-8 max-w-lg bg-white p-8 shadow-md rounded-lg border-red-900">
+      <div className="md:absolute top-8 left-8 max-w-lg bg-white p-8 shadow-md rounded-lg border-red-900">
         <h3 className="text-blue-700 text-2xl font-semibold mb-2">OUR CLIENTS</h3>
         <h2 className="text-2xl font-bold mb-4">Our happy clients say about us</h2>
 

@@ -32,17 +32,17 @@ const doctors = [
     ],
     photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
   },
- 
- 
- 
- 
+
+
+
+
 ];
 
 
 
 const OurSpecialist = () => {
   return (
-    <div className="mt-5 bg-slate-100 p-8">
+    <div className="mt-5 bg-slate-100 md:p-8">
       <h1 className="text-3xl font-bold text-center mb-4">Our Specialist</h1>
       <h2 className="text-xl text-center mb-8">
         We provide a range of services for every medical need.

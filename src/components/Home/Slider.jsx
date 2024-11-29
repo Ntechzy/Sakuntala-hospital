@@ -37,7 +37,7 @@ const Slider = () => {
   return (
     <div className="relative w-[100%] h-screen overflow-hidden">
       {/* Slide Images */}
-      <div className="w-[95%] h-full flex overflow-hidden relative">
+      <div className="md:w-[95%] h-full flex overflow-hidden relative">
         <div
           className="flex transition-transform duration-300 ease-in-out"
           style={{
@@ -71,22 +71,22 @@ const Slider = () => {
       </div>
 
       {/* Indicators */}
-      <div className="absolute md:bottom-5 bottom-0 right-0 flex justify-center items-center md:flex-col flex-row space-y-2 before:content-['_'] before:text-3xl before:h-52 before:bg-black before:w-[1px] before:opacity-20 before:gap-9 before:text-gray-300 after:content-['_'] after:text-3xl after:h-24 after:bg-black after:w-[1px] after:opacity-20 after:text-gray-300">
+      <div className="absolute md:bottom-5 bottom-0  md:w-auto m-auto w-full md:gap-0 gap-4 md:right-0 flex justify-center items-center md:flex-col flex-row space-y-2 md:before:content-['_'] md:before:text-3xl md:before:h-52 md:before:bg-black md:before:w-[1px] md:before:opacity-20 md:before:gap-9 md:before:text-gray-300 md:after:content-['_'] md:after:text-3xl md:after:h-24 md:after:bg-black md:after:w-[1px] md:after:opacity-20 md:after:text-gray-300">
         {images.map((_, index) => (
           <button
             key={index}
             onClick={() => handleIndicatorClick(index)}
-            className={`md:w-16 p-6 mt-3 md:h-16 w-7 h-7 rounded-full border-2 text-3xl border-gray-300 flex items-center justify-center transition duration-300 ${
-              currentSlide === index
-                ? "bg-[#A83679] border-[#A83679] text-white"
-                : "bg-white text-"
-            }`}
+            className={`md:w-16 p-6 mt-3 md:h-16 w-7 h-7 rounded-full border-2 text-3xl border-gray-300 flex items-center justify-center transition duration-300 ${currentSlide === index
+              ? "bg-[#A83679] border-[#A83679] text-white"
+              : "bg-white text-"
+              }`}
           >
             {index + 1}
           </button>
         ))}
       </div>
-    </div>
+
+    </div >
   );
 };
 

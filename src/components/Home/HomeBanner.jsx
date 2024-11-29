@@ -13,7 +13,7 @@ const HomeBanner = () => {
     <div className="flex flex-row ">
       <div className="">
         {/* Social Media Section */}
-        <div className="text-white p-4 flex flex-col items-center mt-32 before:content-['_'] before:text-3xl before:h-52  before:bg-black before:w-[1px] before:opacity-10 before:gap-9  before:text-gray-300">
+        <div className="text-white p-4 hidden md:flex flex-col items-center mt-32 before:content-['_'] before:text-3xl before:h-52  before:bg-black before:w-[1px] before:opacity-10 before:gap-9  before:text-gray-300">
           <div className="flex flex-col space-y-4 mt-3">
             <Link
               to="https://facebook.com"
@@ -60,7 +60,7 @@ const HomeBanner = () => {
       </div>
 
       {/* Slider Section */}
-      <div className="w-[92%] ">
+      <div className="md:w-[92%] ">
         <Slider />
       </div>
     </div>

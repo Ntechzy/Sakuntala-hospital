@@ -20,9 +20,9 @@ const WhyChoose = () => {
     ];
 
     return (
-        <div className="relative flex flex-row mt-5 w-full p-5 bg-slate-50">
+        <div className="relative flex flex-col md:flex-row mt-5 w-full md:p-5 bg-slate-50">
             {/* Left section */}
-            <div className="flex relative flex-col bg-gradient-to-r  rounded-l-lg overflow-hidden p-9 w-[70%]">
+            <div className="flex relative flex-col bg-gradient-to-r  rounded-l-lg overflow-hidden p-9 w-full md:w-[70%]">
                 {/* Wrapper div for all the content */}
                 <div className="z-10">
                     <h1 className="font-bold text-4xl text-blue-800">Why Choose Us</h1>
@@ -34,7 +34,7 @@ const WhyChoose = () => {
                     </p>
                 </div>
 
-                <div className="ml-8 flex flex-col space-y-4 mt-6">
+                <div className="md:ml-8 flex flex-col space-y-4 mt-6">
                     {features.map((feature) => (
                         <div key={feature.id} className="flex flex-row items-start space-x-4 ">
                             <span className="flex justify-center items-center font-bold text-2xl w-16 h-16 text-center rounded-full pt-2 bg-blue-100 text-blue-600 shadow">
