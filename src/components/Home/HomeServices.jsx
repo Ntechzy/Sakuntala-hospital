@@ -22,7 +22,7 @@ const HomeServices = () => {
             key={service.id}
             className="bg-white shadow-md rounded-lg p-6 flex flex-col items-center text-center hover:shadow-lg transition-shadow"
           >
-            <div className="text-red-500 text-4xl mb-4">{service.icon}</div>
+            <div className="text-[#A9377A] text-4xl mb-4">{service.icon}</div>
             <h3 className="text-xl font-semibold">{service.title}</h3>
             <p className="text-gray-600">{service.subtitle}</p>
           </div>
