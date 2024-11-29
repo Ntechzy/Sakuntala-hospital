@@ -3,25 +3,25 @@ import React, { useState } from "react";
 const images = [
   {
     id: 1,
-    src: "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    src: "/assets/homebanner.jpg",
     title: "Welcome to Our Hospital",
     description: "Providing quality healthcare for over 50 years.",
   },
   {
     id: 2,
-    src: "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    src: "/assets/homebanner.jpg",
     title: "Advanced Medical Technology",
     description: "State-of-the-art equipment for accurate diagnosis.",
   },
   {
     id: 3,
-    src: "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    src: "/assets/homebanner.jpg",
     title: "Expert Doctors",
     description: "Our team of specialists is here to care for you.",
   },
   {
     id: 4,
-    src: "https://plus.unsplash.com/premium_photo-1664474619075-644dd191935f?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW1hZ2V8ZW58MHx8MHx8fDA%3D",
+    src: "/assets/homebanner.jpg",
     title: "Comprehensive Care",
     description: "We offer a range of services for every medical need.",
   },
@@ -53,9 +53,9 @@ const Slider = () => {
                 className="w-full h-full object-cover bg-no-repeat border-2 shadow-2xl"
               />
               {/* Overlay Content */}
-              <div className="absolute inset-0 flex flex-col items-start justify-center bg-black bg-opacity-50 text-white text-center p-6">
-                <h1 className="text-4xl font-bold mb-4">{image.title}</h1>
-                <p className="text-lg mb-6">{image.description}</p>
+              <div className="absolute inset-0 flex flex-col items-start justify-center text-white text-center p-6">
+                {/* <h1 className="text-4xl font-bold mb-4">{image.title}</h1>
+                <p className="text-lg mb-6">{image.description}</p> */}
                 <div className="space-x-4">
                   <button className="bg-[#A83679]-500 hover:bg-[#A83679]-700 text-white font-bold py-2 px-4 rounded">
                     Learn More
