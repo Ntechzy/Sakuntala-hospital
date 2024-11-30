@@ -63,7 +63,7 @@ const HomeBanner = () => {
       {/* </div> */}
 
       {/* Footer */}
-      <div className="bg-gray-800 text-white text-center py-5 text-lg flex flex-row justify-center gap-11">
+      <div className="bg-gray-800 text-white text-center py-9 text-lg flex flex-row justify-center gap-11">
         <p> Indira IVF & Shakuntala IVF Centre </p>
         <p> एक ही छत के नीचे Fertility इलाज की सारी सुविधाएं पाएं</p>
         <p>📞 1800 309 1975 </p>
