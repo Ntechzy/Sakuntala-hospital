@@ -60,7 +60,7 @@ const HomeBanner = () => {
       </div>
 
       {/* Slider Section */}
-      <div className="md:w-[92%] ">
+      <div className="md:w-[92%] w-full  ">
         <Slider />
       </div>
     </div>

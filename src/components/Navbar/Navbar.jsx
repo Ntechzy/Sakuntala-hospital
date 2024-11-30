@@ -15,7 +15,7 @@ const Navbar = () => {
         <img src="/assets/logo.png" alt="Logo" className="h-16" />
       </div>
 
-      <div className='bg-[#a83679] p-2 rounded-full' onClick={() => setIsopened(!Isopened)}>
+      <div className='bg-[#a83679] p-2 rounded-full md:hidden flex' onClick={() => setIsopened(!Isopened)}>
         ----
       </div>
 
