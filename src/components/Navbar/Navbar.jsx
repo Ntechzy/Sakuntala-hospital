@@ -9,14 +9,18 @@ const Navbar = () => {
 
   return (
 
-    <nav className="flex items-center justify-around p-4 fixed top-0 left-0 right-0 z-50 bg-white  ">
+    <nav className="flex items-center justify-between p-4 fixed top-0 left-0 right-0 z-50 bg-white  ">
       {/* Logo Section */}
       <div className="flex-shrink-0">
         <img src="/assets/logo.png" alt="Logo" className="h-16" />
       </div>
 
       <div className='bg-[#a83679] p-2 rounded-full md:hidden flex' onClick={() => setIsopened(!Isopened)}>
-        ----
+        {Isopened ? <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg> : <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+        </svg>}
       </div>
 
       {/* Navbar Links */}

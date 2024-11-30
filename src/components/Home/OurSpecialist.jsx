@@ -47,8 +47,9 @@ const OurSpecialist = () => {
       <h2 className="text-xl text-center mb-8">
         We provide a range of services for every medical need.
       </h2>
-      <div className="flex  justify-center gap-8">
+      <div className="flex md:flex-wrap justify-center gap-8">
         {doctors.map((doctor) => (
+          
           <DoctorCard doctor={doctor} />
         ))}
       </div>
