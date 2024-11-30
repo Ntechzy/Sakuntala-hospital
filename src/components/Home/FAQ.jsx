@@ -29,12 +29,12 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-[#cd4f99] p-6 rounded-lg shadow-md *:mb-9">
-      <h2 className="text-2xl font-bold text-white text-center mb-4">Frequently Asked Questions</h2>
+    <div className="bg-[#eecde0] p-6 rounded-lg mt-9 shadow-md *:mb-9">
+      <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">Frequently Asked Questions</h2>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
-            <tr className="bg-[#A9377A] text-white">
+            <tr className="bg-[#cf6ba5] text-white">
               <th className="p-3 text-left">Parameters</th>
               <th className="p-3 text-left">Fertility Check-up</th>
               <th className="p-3 text-left">IUI</th>
@@ -46,7 +46,7 @@ const FAQ = () => {
               <tr
                 key={index}
                 className={`${
-                  index % 2 === 0 ? "bg-white" : "bg-[#FCE4E8]"
+                  index % 2 === 0 ? "bg-white" : "bg-[#c9a2b8]"
                 } text-gray-700`}
               >
                 <td className="p-3 border">{row.parameter}</td>

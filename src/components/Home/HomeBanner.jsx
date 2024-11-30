@@ -1,67 +1,77 @@
 import React from "react";
-import {
-  FaFacebook,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedin,
-} from "react-icons/fa";
-import Slider from "./Slider";
-import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   return (
-    <div className="flex flex-row ">
-      <div className="">
-        {/* Social Media Section */}
-        <div className="text-white p-4 hidden md:flex flex-col items-center mt-32 before:content-['_'] before:text-3xl before:h-52  before:bg-black before:w-[1px] before:opacity-10 before:gap-9  before:text-gray-300">
-          <div className="flex flex-col space-y-4 mt-3">
-            <Link
-              to="https://facebook.com"
-              className="flex items-center space-x-2 text-text-[#A83679] hover:text-white transition duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-text-[#A83679] rounded-full">
-                <FaFacebook className="text-3xl text-white" />
-              </div>
-            </Link>
-            <Link
-              to="https://twitter.com"
-              className="flex items-center space-x-2 text-[#A83679] hover:text-white transition duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-blue-400 rounded-full">
-                <FaTwitter className="text-3xl text-white" />
-              </div>
-            </Link>
-            <Link
-              to="https://instagram.com"
-              className="flex items-center space-x-2 text-[#A83679] hover:text-white transition duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-pink-500 rounded-full">
-                <FaInstagram className="text-3xl text-white" />
-              </div>
-            </Link>
-            <Link
-              to="https://linkedin.com"
-              className="flex items-center space-x-2 text-[#A83679] hover:text-white transition duration-200"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="w-12 h-12 flex items-center justify-center bg-blue-700 rounded-full">
-                <FaLinkedin className="text-3xl text-white" />
-              </div>
-            </Link>
+    <div className="max-w-screen md:h-screen mx-auto bg-white rounded-lg  overflow-hidden">
+      {/* Header Section */}
+
+      {/* Doctor Section */}
+      <div className="flex flex-col md:flex-row items-center mt-24 bg-[#bc5490bb]  space-y-4 md:space-y-0">
+        {/* Doctor's Image */}
+
+        {/* Details */}
+        <div className="w-1/2 md:w-1/2 m-auto flex flex-col p-7">
+          {/* This part will contain the new section with "Advanced Fertility Care" */}
+          <div className="text-center mb-9 bg-[#a41d6cbb] p-4">
+            <h2 className="text-white font-bold text-5xl p-5">
+              Advanced Fertility Care
+            </h2>
+            <p className="text-white text-2xl">अब जौनपुर में भी</p>
           </div>
+
+          {/* Doctor's Name and Specialty */}
+          <p className="text-white font-semibold text-4xl">Meet</p>
+          <h3 className="text-white text-6xl font-bold">
+            Dr. Shakuntala Yadav
+          </h3>
+          <p className="text-white text-2xl pt-5">
+            Gynaecologist & IVF Specialist <br />
+            Jaunpur Centre
+          </p>
+        </div>
+        <div className="w-full md:w-1/3 h-full">
+          <img
+            src="/assets/image1.png"
+            alt="Dr. Shakuntala Yadav"
+            className=" object-cover w-full h-full"
+          />
         </div>
       </div>
+      {/* #5f0137bb */}
+      {/* QR and Contact Section */}
+      {/* <div className="bg-[#5f0137bb]  text-white p-6 flex flex-col md:flex-row-reverse items-center justify-center shadow-white"> */}
+      {/* <div className="flex items-start space-x-44"> */}
+      {/* QR Code */}
+      {/* <div className="bg-white  rounded-lg shadow">
+            <img
+              src="/path-to-qr-code.png"
+              alt="Scan QR Code"
+              className="w-20 h-20"
+            />
+          </div> */}
+      {/* Address */}
+      {/* <div>
+          <div className="mt-4 md:mt-0 flex flex-col space-x-9">
+          <div className="text-lg font-bold">📞📞 1800 309 1975</div>
+            <p className="font-semibold">Indira IVF & Shakuntala IVF Centre</p>
+            <p>विशेश्वर, पंचहटिया, जौनपुर (उत्तरप्रदेश)</p>
+        </div>
+          </div> */}
+      {/* </div> */}
+      {/* Contact */}
 
-      {/* Slider Section */}
-      <div className="md:w-[92%] w-full  ">
-        <Slider />
+      {/* </div> */}
+
+      {/* Footer */}
+      <div className="bg-gray-800 text-white text-center py-5 text-lg flex flex-row justify-center gap-11">
+        <p> Indira IVF & Shakuntala IVF Centre </p>
+        <p> एक ही छत के नीचे Fertility इलाज की सारी सुविधाएं पाएं</p>
+        <p>📞 1800 309 1975 </p>
+        <p>
+          {" "}
+          Indira IVF & Shakuntala IVF Centre विशेश्वर, पंचहटिया, जौनपुर
+          (उत्तरप्रदेश)
+        </p>
       </div>
     </div>
   );

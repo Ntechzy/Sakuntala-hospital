@@ -2,7 +2,7 @@ import React from 'react';
 
 const AppointmentForm = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between min-h-screen bg-blue-50 p-6 gap-9">
+    <div className="flex flex-col md:flex-row items-center justify-between min-h-screen mt-3 bg-[#ebc4db] p-6 gap-9">
       {/* Left Image Section */}
       <div className="w-full md:w-1/2">
         <img
@@ -13,7 +13,7 @@ const AppointmentForm = () => {
       </div>
 
       {/* Right Form Section */}
-      <div className="w-full md:w-1/2 bg-blue-500 text-white p-8 space-y-6">
+      <div className="w-full md:w-1/2 bg-[#bb89a6bb] text-white p-8 space-y-6">
         <h1 className="text-4xl font-bold">Make An Appointment</h1>
         
         {/* Name and Doctor Name */}
@@ -23,12 +23,12 @@ const AppointmentForm = () => {
             <input
               type="text"
               placeholder="Your Name"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-blue-500"
+              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
             />
           </div>
           <div className="w-full">
             <label className="block text-sm font-medium">Choose Doctor Name</label>
-            <select className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-blue-500">
+            <select className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]">
               <option>Choose Doctor Name</option>
               <option>Barbara Ybarra</option>
               <option>Barbara Ybarra</option>
@@ -45,12 +45,12 @@ const AppointmentForm = () => {
             <input
               type="email"
               placeholder="Your Email"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-blue-500"
+              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
             />
           </div>
           <div className="w-full">
             <label className="block text-sm font-medium">Select Department</label>
-            <select className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-blue-500">
+            <select className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]">
               <option>Select Department</option>
               <option>Cardiologists</option>
               <option>Cardiologists</option>
@@ -66,7 +66,7 @@ const AppointmentForm = () => {
             <input
               type="tel"
               placeholder="**********"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-blue-500"
+              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
             />
           </div>
           <div className="w-full">
@@ -74,7 +74,7 @@ const AppointmentForm = () => {
             <input
               type="text"
               placeholder="dd-mm-yyyy"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-blue-500"
+              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
             />
           </div>
         </div>
@@ -84,7 +84,7 @@ const AppointmentForm = () => {
           <label className="block text-sm font-medium">Appointment Note</label>
           <textarea
             placeholder="Write your note here..."
-            className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-blue-500"
+            className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
           />
         </div>
 

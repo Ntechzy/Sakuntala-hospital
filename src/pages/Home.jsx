@@ -10,20 +10,20 @@ import AppointmentForm from '../components/Home/AppointmentForm'
 import TestimonialCarousel from '../components/Home/TestimonitalCarousel'
 import HomeServices from '../components/Home/HomeServices'
 import FAQ from '../components/Home/FAQ'
+import IVFProcess from '../components/Home/IVFProcess'
 
 export const Home = () => {
   return (
     <div>
-        <HomeBanner/>
-        <IconCard/>
-        <HomeServices/>
-        <PatternImage/>
-        {/* <OurDepartment/> */}
-        <WhyChoose/>
-        <OurSpecialist/>
-        <FAQ/>
-        <AppointmentForm/>
-        <TestimonialCarousel/>
+        <HomeBanner />
+<IconCard />
+<HomeServices />
+<WhyChoose />
+<OurSpecialist />
+<IVFProcess />
+<FAQ />
+<AppointmentForm />
+<TestimonialCarousel />
     </div>
   )
 }

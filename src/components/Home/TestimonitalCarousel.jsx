@@ -34,14 +34,14 @@ const TestimonialCarousel = () => {
 
   return (
     <div
-      className="w-full h-screen bg-cover bg-center relative"
+      className="w-full h-screen bg-cover bg-center relative "
       style={{
         backgroundImage: "url('https://www.shutterstock.com/image-photo/smiling-brunette-female-doctor-talking-600nw-2323460383.jpg')",
       }}
     >
-      <div className="md:absolute top-8 left-8 max-w-lg bg-white p-8 shadow-md rounded-lg border-red-900">
-        <h3 className="text-blue-700 text-2xl font-semibold mb-2">OUR CLIENTS</h3>
-        <h2 className="text-2xl font-bold mb-4">Our happy clients say about us</h2>
+      <div className="md:absolute top-8 left-8 max-w-lg bg-[#f7f0f4] p-8 shadow-md rounded-lg border-red-900 ">
+        <h3 className="text-[#992268] text-2xl font-semibold mb-2">OUR CLIENTS</h3>
+        <h2 className="text-2xl text-gray-800 font-bold mb-4">Our happy clients say about us</h2>
 
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
