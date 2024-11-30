@@ -42,12 +42,12 @@ const doctors = [
 
 const OurSpecialist = () => {
   return (
-    <div className=" bg-[#f5eaf1] md:p-8">
+    <div className=" bg-[#f8e9f2] md:p-8 pt-7">
       <h1 className="text-3xl font-bold text-center mb-4">Our Specialist</h1>
       <h2 className="text-xl text-center mb-8">
         We provide a range of services for every medical need.
       </h2>
-      <div className="flex md:flex-wrap justify-center gap-8">
+      <div className="flex md:flex-row flex-col justify-center md:gap-8">
         {doctors.map((doctor) => (
           
           <DoctorCard doctor={doctor} />

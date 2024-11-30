@@ -1,100 +1,81 @@
-import React from 'react';
+import React from 'react'
 
-const AppointmentForm = () => {
-  return (
-    <div className="flex flex-col md:flex-row items-center justify-between min-h-screen mt-3 bg-[#ebc4db] p-6 gap-9">
-      {/* Left Image Section */}
-      <div className="w-full md:w-1/2">
-        <img
-          src="https://www.shutterstock.com/image-photo/smiling-brunette-female-doctor-talking-600nw-2323460383.jpg" // replace with actual image URL
-          alt="Nurse on call"
-          className="w-full h-full object-cover"
-        />
-      </div>
+const AppoinmentForm = () => {
+    return (
+        <div className='md:max-w-[1140px] sm:max-w-[720px] w-full flex md:flex-row flex-col py-[20px] md:py-[100px] justify-between m-auto gap-7'>
 
-      {/* Right Form Section */}
-      <div className="w-full md:w-1/2 bg-[#bb89a6bb] text-white p-8 space-y-6">
-        <h1 className="text-4xl font-bold">Make An Appointment</h1>
-        
-        {/* Name and Doctor Name */}
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <div className="w-full">
-            <label className="block text-sm font-medium">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
-            />
-          </div>
-          <div className="w-full">
-            <label className="block text-sm font-medium">Choose Doctor Name</label>
-            <select className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]">
-              <option>Choose Doctor Name</option>
-              <option>Barbara Ybarra</option>
-              <option>Barbara Ybarra</option>
-              <option>Barbara Ybarra</option>
-              {/* Add more options as needed */}
-            </select>
-          </div>
+
+            <div className='relative w-full md:w-1/2 overflow-hidden md:p-0  p-[10px]'>
+                <img src="/assets/homebanner.jpg" alt="" />
+               
+            </div>
+            <div className='w-full md:w-1/2 px-[15px] flex flex-col leading-[1.6] mt-5 md:p-0 p-[24px]'>
+                <h1 className='text-[#223a66] font-bold text-2xl md:text-[44px] pb-4  '>
+                    Book appoinment
+                </h1>
+                <p className='mb-4'>
+                    Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.
+                </p>
+
+
+                <form action="" className="mt-[40px]">
+                    <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
+                        <input
+                            className="h-[55px] w-full md:w-1/2 bg-[#f4f9fc] p-[.375rem_.75rem]"
+                            type="text"
+                            placeholder="First Name"
+                        />
+                        <input
+                            className="h-[55px] w-full md:w-1/2 bg-[#f4f9fc] p-[.375rem_.75rem]"
+                            type="text"
+                            placeholder="Last Name"
+                        />
+                    </div>
+                    <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
+                        <input
+                            className="h-[55px] w-full md:w-1/2 bg-[#f4f9fc] p-[.375rem_.75rem]"
+                            type="email"
+                            placeholder="Email Address"
+                        />
+                        <input
+                            className="h-[55px] w-full md:w-1/2 bg-[#f4f9fc] p-[.375rem_.75rem]"
+                            type="tel"
+                            placeholder="Phone Number"
+                        />
+                    </div>
+                    <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
+                        <input
+                            className="h-[55px] w-full md:w-1/2 bg-[#f4f9fc] p-[.375rem_.75rem]"
+                            type="text"
+                            placeholder="Preferred Date"
+                        />
+                        <input
+                            className="h-[55px] w-full md:w-1/2 bg-[#f4f9fc] p-[.375rem_.75rem]"
+                            type="text"
+                            placeholder="Preferred Time"
+                        />
+                    </div>
+                    <div>
+                        <textarea
+                            name=""
+                            className="mb-4 w-full bg-[#f4f9fc] p-[.375rem_.75rem]"
+                            rows={6}
+                            placeholder="Write a message"
+                            id=""
+                        ></textarea>
+                    </div>
+
+                    <div className="flex w-full m-auto">
+                        <button className="bg-[#e12454] hover:bg-rose transition-[all_ease_.35s] font-semibold uppercase text-sm py-[12px] text-white px-[32px] rounded-full m-auto">
+                            Make Appointment
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+
         </div>
+    )
+}
 
-        {/* Email and Department */}
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <div className="w-full">
-            <label className="block text-sm font-medium">Email</label>
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
-            />
-          </div>
-          <div className="w-full">
-            <label className="block text-sm font-medium">Select Department</label>
-            <select className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]">
-              <option>Select Department</option>
-              <option>Cardiologists</option>
-              <option>Cardiologists</option>
-              {/* Add more options as needed */}
-            </select>
-          </div>
-        </div>
-
-        {/* Phone and Date */}
-        <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-          <div className="w-full">
-            <label className="block text-sm font-medium">Phone</label>
-            <input
-              type="tel"
-              placeholder="**********"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
-            />
-          </div>
-          <div className="w-full">
-            <label className="block text-sm font-medium">Date</label>
-            <input
-              type="text"
-              placeholder="dd-mm-yyyy"
-              className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
-            />
-          </div>
-        </div>
-
-        {/* Appointment Note */}
-        <div>
-          <label className="block text-sm font-medium">Appointment Note</label>
-          <textarea
-            placeholder="Write your note here..."
-            className="w-full mt-1 px-4 py-2 bg-white text-black rounded-lg border border-gray-300 focus:ring focus:ring-[#a1256ebb]"
-          />
-        </div>
-
-        {/* Submit Button */}
-        <button className="w-full py-3 bg-slate-900 text-white rounded-lg hover:bg-gray-900 transition">
-          Make an appointment
-        </button>
-      </div>
-    </div>
-  );
-};
-
-export default AppointmentForm;
+export default AppoinmentForm

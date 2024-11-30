@@ -29,7 +29,7 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-[#eecde0] p-6 rounded-lg mt-9 shadow-md *:mb-9">
+    <div className="bg-[#f8e9f2] p-6 rounded-lg mt-9 shadow-md *:mb-9">
       <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">Frequently Asked Questions</h2>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">

@@ -20,7 +20,7 @@ const WhyChoose = () => {
     ];
 
     return (
-        <div className="relative flex flex-col md:flex-row w-full md:p-5 bg-[#f7eff5]">
+        <div className="relative flex flex-col md:flex-row w-full md:p-5 bg-[#ffffff]">
             {/* Left section */}
             <div className="flex relative flex-col bg-gradient-to-r  rounded-l-lg overflow-hidden p-9 w-full md:w-[70%]">
                 {/* Wrapper div for all the content */}

@@ -1,73 +1,71 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { FaQuoteRight } from 'react-icons/fa';
-import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import 'slick-carousel/slick/slick.css';
+import { testimonials } from './data';
+// import Headings from '../ui_element/Heading';
+// import { testimonials } from '../../data/testimonial';
 
-const testimonials = [
-  {
-    name: 'Ralph Gonzales',
-    role: 'Patient',
-    photo: 'https://via.placeholder.com/100', // Replace with actual image URL
-    text: 'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Curabitur aliquet quam id dui posuere blandit.',
-  },
-  {
-    name: 'Jane Doe',
-    role: 'Client',
-    photo: 'https://via.placeholder.com/100', // Another placeholder or actual URL
-    text: 'Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.',
-  },
-  // Add more testimonials as needed
-];
 
-const TestimonialCarousel = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000, // Adjust the delay (in milliseconds) as desired
-    arrows: false, // Hide the default arrows
-  };
+const Testimonial = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 5000,
+        arrows: false,
+        responsive: [
+            {
+                breakpoint: 768, // For screens smaller than 768px
+                settings: {
+                    slidesToShow: 1, // Show only one slide
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    };
 
-  return (
-    <div
-      className="w-full h-screen bg-cover bg-center relative "
-      style={{
-        backgroundImage: "url('https://www.shutterstock.com/image-photo/smiling-brunette-female-doctor-talking-600nw-2323460383.jpg')",
-      }}
-    >
-      <div className="md:absolute top-8 left-8 max-w-lg bg-[#f7f0f4] p-8 shadow-md rounded-lg border-red-900 ">
-        <h3 className="text-[#992268] text-2xl font-semibold mb-2">OUR CLIENTS</h3>
-        <h2 className="text-2xl text-gray-800 font-bold mb-4">Our happy clients say about us</h2>
 
-        <Slider {...settings}>
-          {testimonials.map((testimonial, index) => (
-            <div key={index} className="p-4">
-              <div className="flex items-center mb-4">
-                <img
-                  src={testimonial.photo}
-                  alt={testimonial.name}
-                  className="w-16 h-16 rounded-full mr-4"
-                />
+    return (
+        <div className='bg-[#f8e2f2] py-[100px]'>
+
+            <div
+                className="w-full relative md:max-w-[1140px] sm:max-w-[720px] m-auto"
+
+            >
                 <div>
-                  <h4 className="font-semibold text-lg">{testimonial.name}</h4>
-                  <p className="text-gray-500">{testimonial.role}</p>
-                </div>
-              </div>
 
-              <p className="text-gray-700 italic relative">
-                {/* <FaQuoteRight className="text-blue-500 text-3xl absolute right-0" /> */}
-                “{testimonial.text}”
-              </p>
+                    {/* <Headings title="We served over 5000+ Patients" /> */}
+                    <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">We served over 5000+ Patients</h2>
+                </div>
+
+                <Slider {...settings}>
+                    {testimonials.map((testimonial, index) => (
+                        <div key={index} className="p-[30px] mb-[20px] rounded-lg bg-white">
+                            <div className="flex items-center mb-4">
+                                <img
+                                    src={testimonial.photo}
+                                    alt={testimonial.name}
+                                    className="w-16 h-16 rounded-full mr-4"
+                                />
+                                <div>
+                                    <h4 className="font-semibold text-black text-lg">{testimonial.name}</h4>
+                                    <p className="text-gray-500">{testimonial.role}</p>
+                                </div>
+                            </div>
+
+                            <p className="font-[18px] leading-[30px] relative">
+                                {testimonial.text}
+                            </p>
+                        </div>
+                    ))}
+                </Slider>
             </div>
-          ))}
-        </Slider>
-      </div>
-    </div>
-  );
+        </div>
+    );
 };
 
-export default TestimonialCarousel;
+export default Testimonial;

@@ -11,14 +11,16 @@ import TestimonialCarousel from '../components/Home/TestimonitalCarousel'
 import HomeServices from '../components/Home/HomeServices'
 import FAQ from '../components/Home/FAQ'
 import IVFProcess from '../components/Home/IVFProcess'
+import IVFInfo from '../components/Home/IVFInfo'
 
 export const Home = () => {
   return (
     <div>
         <HomeBanner />
-<IconCard />
+{/* <IconCard /> */}
 <HomeServices />
 <WhyChoose />
+<IVFInfo/>
 <OurSpecialist />
 <IVFProcess />
 <FAQ />
