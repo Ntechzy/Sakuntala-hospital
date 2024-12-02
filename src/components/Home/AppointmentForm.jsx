@@ -2,7 +2,7 @@ import React from 'react'
 
 const AppoinmentForm = () => {
     return (
-        <div className='md:max-w-[1140px] sm:max-w-[720px] w-full flex md:flex-row flex-col py-[20px] md:py-[100px] justify-between m-auto gap-7'>
+        <section id='appointment' className='md:max-w-[1140px] sm:max-w-[720px] w-full flex md:flex-row flex-col py-[20px] md:py-[100px] justify-between m-auto gap-7'>
 
 
             <div className='relative w-full md:w-1/2 overflow-hidden md:p-0  p-[10px]'>
@@ -74,7 +74,7 @@ const AppoinmentForm = () => {
 
             </div>
 
-        </div>
+        </section>
     )
 }
 

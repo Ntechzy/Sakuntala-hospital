@@ -6,7 +6,20 @@ export const navbarData = [
     {
       "label": "About",
       "link": "/about",
-    
+    subItems: [
+      {
+        "label": "Overview",
+        "link": "/overview"
+      },
+      {
+        "label": "Why Choose Us",
+        "link": "/why-choose"
+      },
+      {
+        "label": "IVF Info",
+        "link": "/ivf-info"
+      }
+    ]
     },
     {
       "label": "Services",
@@ -15,6 +28,10 @@ export const navbarData = [
     {
       "label": "Facilities",
       "link": "/facilities"
+    },
+    {
+      "label": "Cashless Treatment",
+      "link": "/cashless-treatment"
     },
     
    

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HomeBanner = () => {
   return (
@@ -28,6 +29,7 @@ const HomeBanner = () => {
             Gynaecologist & IVF Specialist <br />
             Jaunpur Centre
           </p>
+         <Link to="/appointment"> <button className="bg-[#bc5490] text-white px-6 py-3 rounded-full text-lg mt-5 w-96 hover:bg-[#a41d6cbb]">Book Your Appointment</button></Link>
         </div>
 
         {/* Doctor's Image */}

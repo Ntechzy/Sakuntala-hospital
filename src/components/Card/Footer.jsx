@@ -10,8 +10,8 @@ const Footer = () => {
           
           {/* Left Section - Logo and Contact Info */}
           <div className="mb-8 md:mb-0">
-            <img src="https://via.placeholder.com/100x50" alt="Loading..." className="w-32 mb-4" /> {/* Replace with actual logo */}
-            <p className="text-slate-100 mb-2">
+            <img src="/assets/logo.png" alt="Loading..." className="w-32 mb-4" /> {/* Replace with actual logo */}
+            <p className="text-black mb-2">
              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, repudiandae!
             </p>
             <p className="font-semibold">177 Devon Lane Miami, MK 3355</p>
