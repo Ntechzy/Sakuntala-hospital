@@ -14,7 +14,7 @@ const HomeBanner = () => {
       </div>
 
       {/* Footer */}
-      <div className="bg-gray-800 text-white text-center p-4 gap-2 md:text-lg flex flex-col md:flex-row justify-center md:gap-11 px-4 md:px-0">
+      {/* <div className="bg-gray-800 text-white text-center p-4 gap-2 md:text-lg flex flex-col md:flex-row justify-center md:gap-11 px-4 md:px-0">
         <p> Indira IVF & Shakuntala IVF Centre </p>
         <p> एक ही छत के नीचे Fertility इलाज की सारी सुविधाएं पाएं</p>
         <p>📞 1800 309 1975 </p>
@@ -22,7 +22,7 @@ const HomeBanner = () => {
           Indira IVF & Shakuntala IVF Centre विशेश्वर, पंचहटिया, जौनपुर
           (उत्तरप्रदेश)
         </p>
-      </div>
+      </div> */}
     </div>
   );
 };
