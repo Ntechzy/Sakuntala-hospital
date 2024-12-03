@@ -12,11 +12,13 @@ import HomeServices from '../components/Home/HomeServices'
 import FAQ from '../components/Home/FAQ'
 import IVFProcess from '../components/Home/IVFProcess'
 import IVFInfo from '../components/Home/IVFInfo'
+import Section2 from '../components/Home/Section2'
 
 export const Home = () => {
   return (
     <div>
         <HomeBanner />
+        <Section2 />
 {/* <IconCard /> */}
 <HomeServices />
 <WhyChoose />
