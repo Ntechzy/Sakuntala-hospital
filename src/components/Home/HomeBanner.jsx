@@ -5,41 +5,12 @@ const HomeBanner = () => {
   return (
     <div className="max-w-screen md:h-screen mx-auto bg-white rounded-lg overflow-hidden">
       {/* Header Section */}
-      
+
       {/* Doctor Section */}
-      <div className="flex flex-col md:flex-row items-center justify-between mt-24 bg-[#bc5490bb] space-y-4 md:space-y-0">
+      <div className="flex flex-col md:flex-row items-center justify-between mt-24 relative space-y-4 md:space-y-0">
         {/* Doctor's Image */}
+        <img className="" src="/assets/banner.jpg" alt="" />
 
-        {/* Details */}
-        <div className="w-full md:w-1/2 px-4 md:px-7 flex flex-col text-center md:text-left py-4 md:py-7 md:ml-28">
-          {/* Advanced Fertility Care Section */}
-          <div className="text-center mb-9 bg-[#a41d6cbb] p-4">
-            <h2 className="text-white font-bold text-4xl md:text-5xl p-5">
-              Advanced Fertility Care
-            </h2>
-            <p className="text-white text-xl md:text-2xl">अब जौनपुर में भी</p>
-          </div>
-
-          {/* Doctor's Name and Specialty */}
-          <p className="text-white font-semibold text-3xl md:text-4xl">Meet</p>
-          <h3 className="text-white text-4xl md:text-6xl font-bold">
-            Dr. Shakuntala Yadav
-          </h3>
-          <p className="text-white text-xl md:text-2xl pt-5">
-            Gynaecologist & IVF Specialist <br />
-            Jaunpur Centre
-          </p>
-         <Link to="/appointment"> <button className="bg-[#bc5490] text-white px-6 py-3 rounded-full text-lg mt-5 w-96 hover:bg-[#a41d6cbb]">Book Your Appointment</button></Link>
-        </div>
-
-        {/* Doctor's Image */}
-        <div className="w-full md:w-1/3 h-full md:h-auto">
-          <img
-            src="/assets/image1.png"
-            alt="Dr. Shakuntala Yadav"
-            className="object-cover w-full h-full rounded-md"
-          />
-        </div>
       </div>
 
       {/* Footer */}
