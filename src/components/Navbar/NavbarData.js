@@ -38,6 +38,7 @@ export const navbarData = [
     {
       "label": "Contact",
       "link": "/contact"
-    }
+    },
+  
   ]
   

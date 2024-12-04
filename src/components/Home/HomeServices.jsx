@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaHeartbeat, FaUserMd, FaChild, FaFlask, FaMicroscope, FaStethoscope, FaFemale, FaCogs } from 'react-icons/fa';
+import { FaHeartbeat, FaUserMd, FaChild, FaFlask, FaMicroscope, FaStethoscope, FaFemale, FaCogs, FaBaby, FaSyringe, FaLightbulb, FaSnowflake, FaUsers, FaDna, FaVials } from 'react-icons/fa';
 
 const services = [
   { id: 1, title: "Anesthesia", subtitle: "(बेहोशी)", icon: <FaStethoscope /> },
@@ -10,7 +10,16 @@ const services = [
   { id: 6, title: "Pathology", subtitle: "(पैथोलॉजी)", icon: <FaMicroscope /> },
   { id: 7, title: "Sonology", subtitle: "(सोनोलोजी)", icon: <FaFlask /> },
   { id: 8, title: "Physiotherapy", subtitle: "(फिज़ियोथेरेपी)", icon: <FaCogs /> },
+  { id: 9, title: "IVF", subtitle: "(आईवीएफ)", icon: <FaBaby /> },
+  { id: 10, title: "ICSI", subtitle: "(इक्सी)", icon: <FaSyringe /> },
+  { id: 11, title: "Laser Assisted Hatching", subtitle: "(लेजर असिस्टेड हैचिंग)", icon: <FaLightbulb /> },
+  { id: 12, title: "Laparoscopy & Hysteroscopy", subtitle: "(लेपरोस्कॉपी एवं हायस्टेरोस्कॉपी)", icon: <FaMicroscope /> },
+  { id: 13, title: "Cryopreservation", subtitle: "(क्रायोप्रिज़र्वेशन)", icon: <FaSnowflake /> },
+  { id: 14, title: "Donor Program", subtitle: "(डोनर प्रोग्राम)", icon: <FaUsers /> },
+  { id: 15, title: "PGT", subtitle: "(पीजीटी)", icon: <FaDna /> },
+  { id: 16, title: "Infertility Test", subtitle: "(निःसंतानता परामर्श एवं जाँच)", icon: <FaVials /> },
 ];
+
 
 const HomeServices = () => {
   return (
