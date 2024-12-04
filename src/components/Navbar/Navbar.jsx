@@ -8,7 +8,7 @@ const Navbar = () => {
   const [Isopened, setIsopened] = useState(false);
 
   return (
-    <nav className="flex items-center justify-between p-4 fixed top-0 left-0 right-0 z-50 bg-white  ">
+    <nav className="flex items-center justify-between p-4 fixed top-0 left-0 right-0 z-50 bg-white">
       {/* Logo Section */}
     <div className="flex flex-row items-center gap-4">
     <div className="flex-shrink-0">

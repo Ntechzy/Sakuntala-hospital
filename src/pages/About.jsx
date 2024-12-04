@@ -11,7 +11,7 @@ const About = () => {
   return (
     <div>
         <Banner CapitalPagename="ABOUT US" pagename="About Us"/>
-        <AboutHome/>
+        {/* <AboutHome/> */}
         <MissionVision/>
         <WhyChoose/>
         <OurSpecialist/>

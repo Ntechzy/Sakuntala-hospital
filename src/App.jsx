@@ -10,6 +10,12 @@ import Cashless from './pages/Cashless'
 import AppoinmentForm from './components/Home/AppointmentForm'
 import Services from './pages/Services'
 import ScrollToTop from './pages/ScrollToTop'
+import Overview from './pages/Overview'
+
+import WhyChoosePage from './pages/WhyChoosePage'
+import IVFInfoPage from './pages/IVFInfoPage'
+import OurSpecialistPage from './pages/OurSpecialistPage'
+import IVFProcessPage from './pages/IVFProcessPage'
 const App = () => {
   return (
     <div >
@@ -19,9 +25,16 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/services" exact element={<Services />} />
+        <Route path="/overview" exact element={<Overview/>} />
+        <Route path="/why-choose" exact element={<WhyChoosePage/>} />
+        <Route path="/ivf-info" exact element={<IVFInfoPage/>} />
+        <Route path="/ivf-process" exact element={<IVFProcessPage/>} />
+        <Route path="/our-specialists" exact element={<OurSpecialistPage/>} />
         <Route path="/about" exact element={<About />} />
         <Route path="/contact" exact element={<Contact />} />   
         <Route path="/facilities" exact element={<Facilities />} />   
+        <Route path="/private-panel" exact element={<Cashless />} />   
+        <Route path="/government-panel" exact element={<Cashless />} />   
         <Route path="/cashless-treatment" exact element={<Cashless />} />   
         <Route path="/appointment" exact element={<AppoinmentForm />} />   
       </Routes>

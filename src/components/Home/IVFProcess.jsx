@@ -44,7 +44,7 @@ const IVFProcess = () => {
   ];
 
   return (
-    <div className="bg-[#ffffff] p-8 shadow-md max-w-3xl mx-auto md:mt-8">
+    <div className="bg-[#ffffff] border-black-200 p-8 shadow-lg max-w-3xl mx-auto md:my-4 md:mt-8">
       <h1 className="text-[#A9377A] text-xl font-bold text-center mb-6">
         IVF Process Step by Step
       </h1>

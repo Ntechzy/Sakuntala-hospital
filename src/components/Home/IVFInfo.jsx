@@ -42,14 +42,12 @@ const faqData = [
 
 const IVFInfo = () => {
   return (
-    <div className="text-white py-5 px-4">
-      <div className="border-2 rounded-lg p-6 w-[50%] m-auto gap-8 items-center">
+    <div className="text-white py-5 px-4 md:mt-6 md:ml-11 ">
+      <div className="shadow-lg rounded-lg p-6 w-[90%] m-auto gap-8 items-center h-[60%] ">
         {/* FAQ Section */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-2 text-center">FAQ'S</h1>
-          <h2 className="text-xl font-semibold mb-4 text-center">
-            Our Expert Answers
-          </h2>
+          <h1 className="text-xl font-bold mb-2 text-center text-gray-950">IVF Information</h1>
+          
           <div className="space-y-4">
             {/* Render FAQ Questions */}
             {faqData.map((faq, index) => (

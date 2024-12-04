@@ -13,11 +13,11 @@ const Section2 = () => {
 
   return (
     <>
-    <div className='text-center text-black flex flex-row gap-9 items-center'>
-      <div className='text-3xl font-bold w-[50%] m-9 text-center'>
+    <div className='text-center text-black md:flex md:flex-row md:gap-9 items-center border-b border-t border-gray-400'>
+      <div className='text-3xl font-bold md:w-[50%] m-9 text-center'>
         Best IVF Centre In Jaunpur
       </div>
-      <div className='text-xl w-[60%] m-9'>
+      <div className='text-xl md:w-[60%] m-9'>
         {more ? text : truncatedText}
         {more ?  <button
      onClick={handleToggle}

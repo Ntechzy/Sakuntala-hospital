@@ -6,7 +6,7 @@ export const navbarData = [
     {
       "label": "About",
       "link": "/about",
-    subItems: [
+    submenu: [
       {
         "label": "Overview",
         "link": "/overview"
@@ -16,8 +16,17 @@ export const navbarData = [
         "link": "/why-choose"
       },
       {
+        "label": "Our Specialists",
+        "link": "/our-specialists"
+      },
+      {
         "label": "IVF Info",
         "link": "/ivf-info"
+      },
+     
+      {
+        "label": "IVF Process",
+        "link": "/ivf-process"
       }
     ]
     },
@@ -31,7 +40,17 @@ export const navbarData = [
     },
     {
       "label": "Cashless Treatment",
-      "link": "/cashless-treatment"
+      "link": "/cashless-treatment",
+      submenu: [
+        {
+        "label": "Private Panel",
+        "link" : "/private-panel",
+        },
+        {
+        "label": "Government Panel",
+        "link" : "/government-panel",
+        },
+      ]
     },
     
    
