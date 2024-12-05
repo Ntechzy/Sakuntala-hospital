@@ -16,6 +16,10 @@ export const navbarData = [
         "link": "/why-choose"
       },
       {
+        "label": "IVF Specialists",
+        "link": "/ivf-specialists"
+      },
+      {
         "label": "Our Specialists",
         "link": "/our-specialists"
       },

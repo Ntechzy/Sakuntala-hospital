@@ -16,12 +16,18 @@ import WhyChoosePage from './pages/WhyChoosePage'
 import IVFInfoPage from './pages/IVFInfoPage'
 import OurSpecialistPage from './pages/OurSpecialistPage'
 import IVFProcessPage from './pages/IVFProcessPage'
+import GovernmentPanel from './pages/GovernmentPanel'
+import IVFSpecialist from './pages/IVFSpecialist'
+import WhatsApp from './components/Whatsupicon/WhatsApp'
+
 const App = () => {
   return (
     <div >
     <Router>
       <ScrollToTop/>
+      
       <Navbar/>
+     {/* <WhatsApp/> */}
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/services" exact element={<Services />} />
@@ -30,11 +36,12 @@ const App = () => {
         <Route path="/ivf-info" exact element={<IVFInfoPage/>} />
         <Route path="/ivf-process" exact element={<IVFProcessPage/>} />
         <Route path="/our-specialists" exact element={<OurSpecialistPage/>} />
+        <Route path="/ivf-specialists" exact element={<IVFSpecialist/>} />
         <Route path="/about" exact element={<About />} />
         <Route path="/contact" exact element={<Contact />} />   
         <Route path="/facilities" exact element={<Facilities />} />   
         <Route path="/private-panel" exact element={<Cashless />} />   
-        <Route path="/government-panel" exact element={<Cashless />} />   
+        <Route path="/government-panel" exact element={<GovernmentPanel />} />   
         <Route path="/cashless-treatment" exact element={<Cashless />} />   
         <Route path="/appointment" exact element={<AppoinmentForm />} />   
       </Routes>

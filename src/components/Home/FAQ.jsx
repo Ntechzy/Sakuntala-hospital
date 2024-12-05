@@ -3,42 +3,42 @@ import React from 'react';
 const FAQ = () => {
   const data = [
     {
-      parameter: "When to do 1st visit?",
-      fertilityCheckup: "18th day of Period",
-      iui: "18th day of Period",
-      ivfIcs: "18th day of Period",
+      parameter: "पहली मुलाकात कब करें?",
+      fertilityCheckup: "पीरियड के 18वें दिन",
+      iui: "पीरियड के 18वें दिन",
+      ivfIcs: "पीरियड के 18वें दिन",
     },
     {
-      parameter: "Duration of 1st visit?",
-      fertilityCheckup: "1 day for check-up",
-      iui: "1 day for check-up",
-      ivfIcs: "1 day for check-up",
+      parameter: "पहली मुलाकात की अवधि?",
+      fertilityCheckup: "चेक-अप के लिए 1 दिन",
+      iui: "चेक-अप के लिए 1 दिन",
+      ivfIcs: "चेक-अप के लिए 1 दिन",
     },
     {
-      parameter: "When to do 2nd visit (Start Treatment)?",
+      parameter: "दूसरी मुलाकात (इलाज शुरू करना) कब करें?",
       fertilityCheckup: "N/A",
-      iui: "9th day of Period",
-      ivfIcs: "2nd day of Period",
+      iui: "पीरियड के 9वें दिन",
+      ivfIcs: "पीरियड के 2वें दिन",
     },
     {
-      parameter: "Total duration of treatment",
-      fertilityCheckup: "1 Day",
-      iui: "1 Month",
-      ivfIcs: "2-3 Months",
+      parameter: "इलाज की कुल अवधि",
+      fertilityCheckup: "1 दिन",
+      iui: "1 माह",
+      ivfIcs: "2-3 माह",
     },
   ];
 
   return (
     <div className="bg-[#f8e9f2] p-6 rounded-lg mt-9 shadow-md *:mb-9">
-      <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">Frequently Asked Questions</h2>
+      <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">अक्सर पूछे जाने वाले सवाल</h2>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
             <tr className="bg-[#cf6ba5] text-white">
-              <th className="p-3 text-left">Parameters</th>
-              <th className="p-3 text-left">Fertility Check-up</th>
-              <th className="p-3 text-left">IUI</th>
-              <th className="p-3 text-left">IVF / ICSI</th>
+              <th className="p-3 text-left">पैरामीटर्स</th>
+              <th className="p-3 text-left">फर्टिलिटी चेक-अप</th>
+              <th className="p-3 text-left">आईयूआई</th>
+              <th className="p-3 text-left">आईवीएफ  / आईसीएसआई </th>
             </tr>
           </thead>
           <tbody>
