@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="flex-shrink-0">
           <img src="/assets/logo.png" alt="Logo" className="h-12 w-auto" />
         </div>
-        <div className="text-[#A83679] text-2xl font-bold">
+        <div className="text-[#A83679] md:text-2xl font-bold">
           Shakuntala Hospital
         </div>
       </div>
@@ -68,7 +68,7 @@ const Navbar = () => {
             <li
               key={index}
               className="relative group"
-              onMouseEnter={() => setOpenSubmenu(index)} // Open submenu on hover
+              onMouseEnter={() => setOpenSubmenu(index)} 
               onMouseLeave={() => setOpenSubmenu(null)} // Close submenu when not hovered
             >
               <Link
@@ -79,7 +79,7 @@ const Navbar = () => {
                 }}
                 className={`block px-3 py-2 rounded-md text-lg font-medium hover:text-[#A83679] ${
                   activeLink === item.label ? "text-[#A83679]" : "text-black"
-                }`}
+                } ${item.style || ""}`}
               >
                 {item.label}
               </Link>
@@ -88,7 +88,7 @@ const Navbar = () => {
               {item.submenu && (
                 <ul
                   className={`absolute left-0 mt-0 w-48 z-50 bg-slate-50 text-black rounded-md shadow-lg ${
-                    openSubmenu === index || openSubmenu === true 
+                    openSubmenu === index || openSubmenu === true
                       ? "block"
                       : "hidden"
                   }`}
@@ -113,14 +113,6 @@ const Navbar = () => {
           ))}
         </ul>
       </div>
-
-      {/* Appointment Button */}
-      <Link
-        to="/appointment"
-        className="bg-[#A83679] text-white p-3 rounded-lg text-md md:block hidden"
-      >
-        Book An Appointment
-      </Link>
     </nav>
   );
 };

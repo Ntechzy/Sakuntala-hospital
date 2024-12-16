@@ -62,6 +62,12 @@ export const navbarData = [
       "label": "Contact",
       "link": "/contact"
     },
+    {
+      "label": "Book An Appointment",
+      "link": "/appointment",
+      "style": "bg-[#A83679] text-white px-4 py-2 rounded-md hover:bg-gray-200"
+    }
+    
   
   ]
   

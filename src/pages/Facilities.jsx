@@ -1,4 +1,5 @@
 import React from 'react';
+import Banner from '../components/BannerComponent/Banner';
 
 const Facilities = () => {
   const facilities = [
@@ -17,6 +18,8 @@ const Facilities = () => {
   ];
 
   return (
+    <div>
+ <Banner CapitalPagename="HOSPITAL FACILITIES" pagename="Facilities"/>
     <div className="max-w-7xl mx-auto px-6 py-8">
       <h1 className="text-3xl font-semibold text-center text-gray-800 mb-6">Hospital Facilities</h1>
       
@@ -39,6 +42,7 @@ const Facilities = () => {
         </tbody>
       </table>
     </div>
+          </div>
   );
 };
 

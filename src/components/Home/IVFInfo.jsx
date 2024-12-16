@@ -46,7 +46,7 @@ const IVFInfo = () => {
       <div className="shadow-lg rounded-lg p-6 w-[90%] m-auto gap-8 items-center h-[60%] ">
         {/* FAQ Section */}
         <div className="mb-8">
-          <h1 className="text-xl font-bold mb-2 text-center text-gray-950">IVF Information</h1>
+          {/* <h1 className="text-xl font-bold mb-2 text-center text-gray-950">IVF Information</h1> */}
           
           <div className="space-y-4">
             {/* Render FAQ Questions */}

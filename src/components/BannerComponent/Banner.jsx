@@ -3,20 +3,20 @@ import React from 'react';
 const Banner = ({CapitalPagename,pagename}) => {
   return (
     <div
-      className="relative w-full h-96 flex items-center justify-center bg-cover bg-center"
+      className="relative w-full h-96 flex items-center justify-center pt-[250px] md:pt-[300px] md:pl-24 md:bg-cover bg-contain bg-no-repeat bg-center"
       style={{
-        backgroundImage: "url('https://www.shutterstock.com/image-photo/smiling-brunette-female-doctor-talking-600nw-2323460383.jpg')",
+        backgroundImage: "url('/assets/commonbanner.avif')",
       }}
     >
       {/* Overlay */}
-      <div className="absolute inset-0 bg-blue-900 opacity-60"></div>
+      <div className="absolute inset-0 bg-pink-900 opacity-60"></div>
       
       {/* Content */}
-      <div className="relative  z-10 p-8 bg-white bg-opacity-90 rounded-lg max-w-xl text-center">
-        <h1 className="text-4xl font-bold mb-2">{CapitalPagename}</h1>
-        <div className="flex items-center justify-center text-gray-600 text-sm">
+      <div className="relative  z-10 p-8  bg-opacity-90 rounded-lg max-w-xl text-center">
+        <h1 className="text-4xl text-white font-bold mb-2">{CapitalPagename}</h1>
+        <div className="flex items-center justify-center text-white text-sm">
           <span className="mr-2">🏠</span>
-          <span className="text-[#A83679]">Home</span> 
+          <span className="text-white">Home</span> 
           <span className="mx-1">/</span>
           <span>{pagename}</span>
         </div>
