@@ -87,8 +87,8 @@ const Navbar = () => {
               {/* Submenu */}
               {item.submenu && (
                 <ul
-                  className={`absolute left-0 mt-2 w-48 z-50 bg-slate-50 text-black rounded-md shadow-lg ${
-                    openSubmenu === index || openSubmenu === true
+                  className={`absolute left-0 mt-0 w-48 z-50 bg-slate-50 text-black rounded-md shadow-lg ${
+                    openSubmenu === index || openSubmenu === true 
                       ? "block"
                       : "hidden"
                   }`}

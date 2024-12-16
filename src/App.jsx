@@ -27,7 +27,7 @@ const App = () => {
       <ScrollToTop/>
       
       <Navbar/>
-     {/* <WhatsApp/> */}
+     <WhatsApp/>
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/services" exact element={<Services />} />

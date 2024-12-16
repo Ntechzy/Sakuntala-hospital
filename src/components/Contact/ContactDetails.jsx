@@ -21,7 +21,8 @@ const ContactDetails = () => {
           <h1 className="font-bold text-2xl md:mb-4 p-2">Contact Information</h1>
           <p className="md:w-96 p-3"> <span className="font-medium">ADDRESS:</span> 702, PANCHAHATIA AZAMGARH ROAD, Vishesharpur, Jaunpur, Uttar Pradesh 222001</p>
           <p><span className="font-medium p-3">EMAIL US:</span> info@bexi.com</p>
-          <p><span className="font-medium p-3">PHONE: </span>1-885-665-2024</p>
+          <p><span className="font-medium p-3">CONTACT 1: </span>+91 8528012822</p>
+          <p><span className="font-medium p-3">CONTACT 2: </span>+91 8737090682</p>
         </div>
 
         {/* Opening Hours Section */}
