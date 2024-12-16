@@ -4,7 +4,7 @@ export const navbarData = [
       "link": "/"
     },
     {
-      "label": "About",
+      "label": "About ",
       "link": "/about",
     submenu: [
       {

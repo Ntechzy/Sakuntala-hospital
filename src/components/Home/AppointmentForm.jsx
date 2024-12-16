@@ -5,7 +5,7 @@ const AppoinmentForm = () => {
         <section id='appointment' className='md:max-w-[1140px] sm:max-w-[720px] w-full flex md:flex-row flex-col py-[20px] md:py-[100px] justify-between m-auto gap-7'>
 
 
-            <div className='relative w-full md:w-1/2 overflow-hidden md:p-0  p-[10px]'>
+            <div className='relative w-full md:w-[90%] overflow-hidden md:p-0  p-[10px]'>
                 <img src="/assets/homebanner.jpg" alt="" />
                
             </div>
@@ -66,7 +66,7 @@ const AppoinmentForm = () => {
                     </div>
 
                     <div className="flex w-full m-auto">
-                        <button className="bg-[#e12454] hover:bg-rose transition-[all_ease_.35s] font-semibold uppercase text-sm py-[12px] text-white px-[32px] rounded-full m-auto">
+                        <button className="bg-[#ab2f5d] hover:bg-rose transition-[all_ease_.35s] font-semibold uppercase text-sm py-[12px] text-white px-[32px] rounded-full m-auto">
                             Make Appointment
                         </button>
                     </div>
