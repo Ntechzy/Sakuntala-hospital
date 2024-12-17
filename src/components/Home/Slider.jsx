@@ -35,9 +35,9 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-[100%] h-screen overflow-hidden">
+    <div className="relative w-[100%] h-screen  ">
       {/* Slide Images */}
-      <div className="md:w-[95%] h-full flex overflow-hidden relative">
+      <div className="md:w-[95%] h-full flex overflow-hidden   relative">
         <div
           className="flex transition-transform duration-300 ease-in-out"
           style={{
@@ -50,10 +50,10 @@ const Slider = () => {
               <img
                 src={image.src}
                 alt={`Slide ${image.id}`}
-                className="w-full h-full object-cover p-11 bg-no-repeat border-2 shadow-2xl"
+                className="w-full h-full object-cover p-2 md:p-11 bg-no-repeat border-2 shadow-none md:shadow-2xl"
               />
               {/* Overlay Content */}
-              <div className="absolute inset-0 flex flex-col pt-60 items-center justify-center text-white text-center p-6">
+              {/*<div className="absolute inset-0 flex flex-col pt-60 items-center justify-center text-white text-center p-6">*/}
                 {/* <h1 className="text-4xl font-bold mb-4">{image.title}</h1>
                 <p className="text-lg mb-6">{image.description}</p> */}
                 {/* <div className="space-x-4">
@@ -64,14 +64,14 @@ const Slider = () => {
                     Contact Us
                   </button>
                 </div> */}
-              </div>
+              {/*</div>*/}
             </div>
           ))}
         </div>
       </div>
 
       {/* Indicators */}
-      <div className="absolute md:bottom-5 bottom-0  md:w-auto m-auto w-full md:gap-0 gap-4 md:right-0 flex justify-center items-center md:flex-col flex-row space-y-2 md:before:content-['_'] md:before:text-3xl md:before:h-52 md:before:bg-black md:before:w-[1px] md:before:opacity-20 md:before:gap-9 md:before:text-gray-300 md:after:content-['_'] md:after:text-3xl md:after:h-24 md:after:bg-black md:after:w-[1px] md:after:opacity-20 md:after:text-gray-300">
+      <div className="absolute md:bottom-5 bottom-[-52px]  md:w-auto m-auto w-full md:gap-0 gap-4 md:right-0 flex justify-center items-center md:flex-col flex-row space-y-2 md:before:content-['_'] md:before:text-3xl md:before:h-52 md:before:bg-black md:before:w-[1px] md:before:opacity-20 md:before:gap-9 md:before:text-gray-300 md:after:content-['_'] md:after:text-3xl md:after:h-24 md:after:bg-black md:after:w-[1px] md:after:opacity-20 md:after:text-gray-300">
         {images.map((_, index) => (
           <button
             key={index}

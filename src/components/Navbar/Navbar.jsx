@@ -16,7 +16,7 @@ const Navbar = () => {
           <img src="/assets/logo.png" alt="Logo" className="h-12 w-auto" />
         </div>
         <div className="text-[#A83679] md:text-2xl font-bold">
-          Shakuntala Hospital
+          Shakuntala IVF Centre
         </div>
       </div>
 

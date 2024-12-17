@@ -27,15 +27,15 @@ const Whatsapp = () => {
     };
 
     return (
-        <div className="fixed bottom-6 left-0 z-50">
+        <div className="fixed bottom-6  right-0 z-50">
             {/* WhatsApp Icon */}
             <div
-                className={`flex items-center justify-center bg-green-500 w-16 h-16 text-white rounded-full cursor-pointer shadow-lg ${
+                className={`fixed bottom-10 right-9 flex items-center justify-center bg-green-500 w-14 h-14 md:w-16 md:h-16 text-white rounded-full cursor-pointer shadow-lg ${
                     open ? "hidden" : "block"
                 }`}
                 onClick={() => setOpen(true)}
             >
-                <IoLogoWhatsapp size={50} className="bg-green-500 rounded-full" />
+                <IoLogoWhatsapp size={50} className="bg-green-500 rounded-full size-10 md:size-[50px]" />
             </div>
 
             {/* Chat Dialog */}
