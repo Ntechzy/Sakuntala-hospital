@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="flex items-center justify-between p-4 fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
       {/* Logo Section */}
-      <div className="flex flex-row items-center gap-4">
+      <div className="flex flex-row items-center gap-2">
         <div className="flex-shrink-0">
           <img src="/assets/logo.png" alt="Logo" className="h-12 w-auto" />
         </div>
@@ -62,7 +62,7 @@ const Navbar = () => {
         <ul
           className={`flex md:m-0 md:gap-4 md:px-0 px-6 flex-col md:flex-row md:relative absolute md:top-0 top-16 md:left-auto ${
             isOpened ? "left-0" : "-left-full"
-          } bg-white md:w-auto w-full md:h-auto h-screen md:space-x-4 transition-all duration-300 ease-in-out`}
+          } bg-white md:w-auto w-full md:h-auto h-screen md:space-x-0 transition-all duration-300 ease-in-out`}
         >
           {navbarData.map((item, index) => (
             <li

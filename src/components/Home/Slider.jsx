@@ -3,19 +3,19 @@ import React, { useState } from "react";
 const images = [
   {
     id: 1,
-    src: "/assets/homebanner.jpg",
+    src: "/assets/gallery/all2.avif",
     title: "Welcome to Our Hospital",
     description: "Providing quality healthcare for over 50 years.",
   },
   {
     id: 2,
-    src: "/assets/homebanner.jpg",
+    src: "/assets/gallery/building.avif",
     title: "Advanced Medical Technology",
     description: "State-of-the-art equipment for accurate diagnosis.",
   },
   {
     id: 3,
-    src: "/assets/homebanner.jpg",
+    src: "/assets/gallery/all3.avif",
     title: "Expert Doctors",
     description: "Our team of specialists is here to care for you.",
   },
@@ -56,14 +56,14 @@ const Slider = () => {
               <div className="absolute inset-0 flex flex-col pt-60 items-center justify-center text-white text-center p-6">
                 {/* <h1 className="text-4xl font-bold mb-4">{image.title}</h1>
                 <p className="text-lg mb-6">{image.description}</p> */}
-                <div className="space-x-4">
+                {/* <div className="space-x-4">
                   <button className="bg-[#A83679]-500 hover:bg-[#A83679]-700 text-black border-2 font-bold py-2 px-4 rounded">
                     Learn More
                   </button>
                   <button className="bg-[#A83679] hover:bg-[#82265c] text-white hover:text-white font-bold py-2 px-4 border border-white rounded">
                     Contact Us
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           ))}

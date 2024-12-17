@@ -9,6 +9,6 @@ const Gallery = () => {
         <Section2/>
     </div>
   )
-}
+} 
 
 export default Gallery

@@ -39,6 +39,10 @@ export const navbarData = [
       "link": "/services",
     },
     {
+      "label": "Our Docters",
+      "link": "/doctors",
+    },
+    {
       "label": "Facilities",
       "link": "/facilities"
     },
@@ -58,6 +62,10 @@ export const navbarData = [
     },
     
    
+    {
+      "label": "Gallery",
+      "link": "/gallery"
+    },
     {
       "label": "Contact",
       "link": "/contact"

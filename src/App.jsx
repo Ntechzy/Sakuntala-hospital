@@ -19,6 +19,8 @@ import IVFProcessPage from './pages/IVFProcessPage'
 import GovernmentPanel from './pages/GovernmentPanel'
 import IVFSpecialist from './pages/IVFSpecialist'
 import WhatsApp from './components/Whatsupicon/WhatsApp'
+import Doctors from './pages/Doctors'
+import Gallery from './pages/Gallery'
 
 const App = () => {
   return (
@@ -44,6 +46,8 @@ const App = () => {
         <Route path="/government-panel" exact element={<GovernmentPanel />} />   
         <Route path="/cashless-treatment" exact element={<Cashless />} />   
         <Route path="/appointment" exact element={<AppoinmentForm />} />   
+        <Route path="/doctors" exact element={<Doctors />} />   
+        <Route path="/gallery" exact element={<Gallery />} />   
       </Routes>
       <Footer/> 
     </Router>

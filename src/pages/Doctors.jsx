@@ -9,6 +9,6 @@ const Doctors = () => {
         <OurSpecialist/>
     </div>
   )
-}
+};
 
 export default Doctors
