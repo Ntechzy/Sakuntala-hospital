@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { navbarData } from "./NavbarData";
 import { Link } from "react-router-dom";
+import {IoMdArrowDropdownCircle} from "react-icons/io";
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -75,19 +76,21 @@ const Navbar = () => {
                 to={item.link}
                 onClick={() => {
                   setActiveLink(item.label);
-                  setIsOpened(false); // Close menu on mobile after clicking
+                  !item.submenu?.length && setIsOpened(false);
+                  setOpenSubmenu((prev)=> prev ? null : index)
                 }}
-                className={`block px-3 py-2 rounded-md text-lg font-medium hover:text-[#A83679] ${
+                className={` px-3 py-2 rounded-md text-lg font-medium hover:text-[#A83679] flex justify-between items-center  ${
                   activeLink === item.label ? "text-[#A83679]" : "text-black"
                 } ${item.style || ""}`}
               >
                 {item.label}
+                {item.submenu?.length && <IoMdArrowDropdownCircle className={"md:hidden"} />}
               </Link>
 
               {/* Submenu */}
               {item.submenu && (
                 <ul
-                  className={`absolute left-0 mt-0 w-48 z-50 bg-slate-50 text-black rounded-md shadow-lg ${
+                  className={`pl-5  md:pl-0 md:absolute left-0 mt-0 w-full md:w-48 z-50 bg-slate-50 text-black rounded-md md:shadow-lg ${
                     openSubmenu === index || openSubmenu === true
                       ? "block"
                       : "hidden"

@@ -39,7 +39,7 @@ export const navbarData = [
       "link": "/services",
     },
     {
-      "label": "Our Docters",
+      "label": "Our Doctors",
       "link": "/doctors",
     },
     {
