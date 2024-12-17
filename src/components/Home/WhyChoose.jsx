@@ -59,7 +59,7 @@ const WhyChoose = () => {
                 <div className="md:ml-8 flex flex-col space-y-4 mt-6">
                     {features.map((feature) => (
                         <div key={feature.id} className="flex flex-row items-start space-x-4">
-                            <span className="flex justify-center items-center font-bold text-2xl w-16 h-16 text-center rounded-full pt-2 bg-[#A83679] text-white shadow">
+                            <span className="flex justify-center items-center md:font-bold shrink-0 md:text-2xl text-xl md:w-16 md:h-16 w-11 h-11 text-center rounded-full md:pt-2 bg-[#A83679] text-white shadow">
                                 {feature.id}
                             </span>
                             <div>

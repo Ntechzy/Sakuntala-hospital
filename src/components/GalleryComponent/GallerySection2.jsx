@@ -43,7 +43,7 @@ const GallerySection2 = () => {
             <div
               key={i}
               onClick={() => setSelected(heading.name)}
-              className={`flex justify-between mx-5 font-semibold bg-white p-2 relative cursor-pointer ${
+              className={`flex justify-between mx-5 font-semibold bg-white p-[10px]  relative cursor-pointer ${
                 selected === heading.name
                   ? 'before:absolute before:left-0 before:h-1 before:w-full before:bg-blue-900 before:-bottom-2'
                   : ''
@@ -60,7 +60,7 @@ const GallerySection2 = () => {
               key={i}
               className="flex justify-center bg-gold p-1 rounded-md relative w-full max-w-[400px] h-[320px] overflow-hidden"
             >
-              <img className="w-full h-full object-cover rounded-md" src={item.img} alt="" />
+              <img className="w-full h-full object-cover rounded-md" src={item.img} alt="Loading..." />
               
               {item.type === 'vid' && (
                 <div className="absolute top-[50%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 m-auto">
