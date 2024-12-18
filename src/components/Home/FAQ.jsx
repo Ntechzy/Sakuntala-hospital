@@ -29,12 +29,25 @@ const FAQ = () => {
   ];
 
   return (
-    <div className="bg-[#f8e9f2] p-6 rounded-lg mt-9 shadow-md *:mb-9">
-      <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">अक्सर पूछे जाने वाले सवाल</h2>
+    <div className="bg-[#f9ecf833] p-6 rounded-lg mt-9 *:mb-9">
+
+      <div className='mb-[10px] md:w-[58.33%] m-auto flex-col text-center'>
+        <h3 className='text-[12px] md:text-[16px] font-bold text-[#3e0b51] mb-[20px]'>
+          Frequently Asked Questions
+        </h3>
+        <div className='flex flex-col justify-center items-center gap-5'>
+          <h1 className='text-[#0b1f43] mb-[18px] font-[700] text-[24px] md:text-[42px] leading-[1.25em]'>
+            अक्सर पूछे जाने वाले सवाल
+          </h1>
+        </div>
+      </div>
+
+
+      <h2 className="text-2xl font-bold text-gray-800 text-center mb-4"></h2>
       <div className="overflow-x-auto">
         <table className="w-full border-collapse">
           <thead>
-            <tr className="bg-[#cf6ba5] text-white">
+            <tr className="bg-[#c9a2b8] text-white">
               <th className="p-3 text-left">पैरामीटर्स</th>
               <th className="p-3 text-left">फर्टिलिटी चेक-अप</th>
               <th className="p-3 text-left">आईयूआई</th>
@@ -45,9 +58,8 @@ const FAQ = () => {
             {data.map((row, index) => (
               <tr
                 key={index}
-                className={`${
-                  index % 2 === 0 ? "bg-white" : "bg-[#c9a2b8]"
-                } text-gray-700`}
+                className={`${index % 2 === 0 ? "bg-white" : "bg-[#c9a2b8]"
+                  } text-gray-700`}
               >
                 <td className="p-3 border">{row.parameter}</td>
                 <td className="p-3 border">{row.fertilityCheckup}</td>

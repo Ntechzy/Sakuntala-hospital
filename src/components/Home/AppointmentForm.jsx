@@ -2,23 +2,20 @@ import React from 'react'
 
 const AppoinmentForm = () => {
     return (
-        <section id='appointment' className=' md:w-[90%]  w-full flex md:flex-row flex-col py-[20px] md:py-[100px]  m-auto gap-1 md:gap-7'>
+        <section id='appointment' className=' md:w-[90%]  w-full flex md:flex-row flex-col py-[20px] md:py-[100px] items-start m-auto gap-1 md:gap-7'>
 
 
-            <div className='relative w-full md:w-[90%]   overflow-hidden md:p-0  p-[10px]'>
-                <img src="/assets/appointment.avif" alt="" className='w-[90%] m-auto h-[300px] rounded md:h-[465px] mt-16 bg-black' />
-               
+            <div className='relative w-full md:w-[90%] overflow-hidden md:p-0 p-[10px] bg-cover'>
+                <img src="/assets/appointment.avif" alt="" className='w-[90%] m-auto h-[465px] bg-black' />
+
             </div>
-            <div className='w-full md:w-1/2 px-[15px] flex flex-col leading-[1.6] mt-1 md:mt-5 md:p-0 p-[24px]'>
+            <div className='w-full md:w-1/2 px-[15px] flex flex-col leading-[1.6] mt-1 md: md:p-0 p-[24px]'>
                 <h1 className='text-[#223a66] font-bold text-2xl md:text-[44px] pb-4  '>
                     Book appoinment
                 </h1>
-                <p className='mb-4'>
-                Fill out the form with your details and preferred time. Our team will confirm your booking shortly.
-                </p>
 
 
-                <form action="" className="mt-[40px]">
+                <form action="" className="mt-[20px]">
                     <div className="mb-[1rem] flex flex-col md:flex-row justify-between gap-3">
                         <input
                             className="h-[55px] w-full md:w-1/2 bg-[#f4f9fc] p-[.375rem_.75rem]"

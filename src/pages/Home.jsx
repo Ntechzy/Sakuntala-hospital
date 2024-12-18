@@ -17,20 +17,19 @@ import Section2 from '../components/Home/Section2'
 export const Home = () => {
   return (
     <div>
-        <HomeBanner />
-        <Section2 />
-{/* <IconCard /> */}
-<HomeServices />
-<WhyChoose />
-{/* <div className='md:flex md:flex-row justify-center border-t md:mt-3 '>
-<IVFInfo/>
-<IVFProcess />
-</div> */}
-<OurSpecialist />
+      <HomeBanner />
+      <IconCard />
+      <Section2 />
+      <HomeServices />
+      <WhyChoose />
+      {/* {/* <div className='md:flex md:flex-row justify-center border-t md:mt-3 '> */}
+      {/* <IVFInfo /> */}
+      <IVFProcess /> 
+      <OurSpecialist />
 
-<FAQ />
-<AppointmentForm />
-<TestimonialCarousel />
+      <AppointmentForm />
+      <FAQ />
+      <TestimonialCarousel />
     </div>
   )
 }

@@ -2,7 +2,7 @@ import React from 'react';
 
 const DoctorCard = ({ doctor }) => {
   return (
-    <div className="bg-white shadow-lg rounded-lg p-4 w-full md:w-1/3 mx-auto mb-6">
+    <div className="bg-white shadow-sm rounded-lg p-4 w-full md:w-1/3 mx-auto mb-6">
       <img
         src={doctor.photo}
         alt={doctor.name}

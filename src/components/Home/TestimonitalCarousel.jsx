@@ -30,16 +30,21 @@ const Testimonial = () => {
 
 
     return (
-        <div className='bg-[#f8e2f2] py-[100px]'>
+        <div className='sm:py-[100px]'>
 
             <div
                 className="w-full relative md:max-w-[1140px] sm:max-w-[720px] m-auto"
 
             >
-                <div>
-
-                    {/* <Headings title="We served over 5000+ Patients" /> */}
-                    <h2 className="text-2xl font-bold text-gray-800 text-center mb-4">We served over 5000+ Patients</h2>
+                <div className='mb-[55px] md:w-[58.33%] m-auto flex-col text-center'>
+                    <h3 className='text-[12px] md:text-[16px] font-bold text-[#2b8bb1] mb-[20px]'>
+                        Testimonials
+                    </h3>
+                    <div className='flex flex-col justify-center items-center gap-5'>
+                        <h1 className='text-[#0a2042] mb-[18px] font-[700] text-[24px] md:text-[42px] leading-[1.25em]'>
+                            We provide a range of services for every medical need.
+                        </h1>
+                    </div>
                 </div>
 
                 <Slider {...settings}>

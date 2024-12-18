@@ -32,24 +32,28 @@ const doctors = [
     ],
     photo: "/assets/gallery/dranshu.png"
   },
-
-
-
-
 ];
 
 
 
 const OurSpecialist = () => {
   return (
-    <div className=" bg-[#f8e9f2] md:p-8 pt-7">
+    <div className=" bg-[#f8e9f23e] md:p-8 pt-7">
       {/* <h1 className="text-3xl font-bold text-center mb-4">Our Specialist</h1> */}
-      <h2 className="text-xl text-center mb-8">
-        We provide a range of services for every medical need.
-      </h2>
+
+      <div className='mb-[55px] md:w-[58.33%] m-auto flex-col text-center'>
+        <h3 className='text-[12px] md:text-[16px] font-bold text-[#2b8bb1] mb-[20px]'>
+          Our Specilist
+        </h3>
+        <div className='flex flex-col justify-center items-center gap-5'>
+          <h1 className='text-[#0a2042] mb-[18px] font-[700] text-[24px] md:text-[42px] leading-[1.25em]'>
+            Expert care from our specialist doctors.
+          </h1>
+        </div>
+      </div>
       <div className="flex md:flex-row flex-col justify-center md:gap-8">
         {doctors.map((doctor) => (
-          
+
           <DoctorCard doctor={doctor} />
         ))}
       </div>
