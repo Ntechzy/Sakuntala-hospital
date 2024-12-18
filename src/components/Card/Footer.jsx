@@ -28,10 +28,15 @@ const Footer = () => {
                 <strong>Address:</strong> 702, PANCHAHATIA AZAMGARH ROAD, Vishesharpur, Jaunpur, Uttar Pradesh 222001
               </p>
               <p className="text-pink-700">
-                <strong>Email Us:</strong> info@gmail.com
+                <strong>Email Us:</strong> 
+                <a href="mailto:ivfcentreshakuntala@gmail.com" className="text-pink-700 hover:text-pink-900">
+                  ivfcentreshakuntala@gmail.com
+                </a>
               </p>
               <p className="text-pink-700">
-                <strong>Call Us:</strong> 1-885-665-2024
+                <strong>Call Us:</strong>
+                <a href="tel:+918528012822" className="text-pink-700 hover:text-pink-900"> +91 8528012822 </a> ||
+                <a href="tel:+918737090682" className="text-pink-700 hover:text-pink-900"> +91 8737090682 </a>
               </p>
               {/* Social Media Icons */}
               <div className="flex space-x-4 mt-4">
@@ -73,6 +78,16 @@ const Footer = () => {
               <li>
                 <Link to="/facilities" className="hover:text-pink-900">
                   Facilities
+                </Link>
+              </li>
+              <li>
+                <Link to="/gallery" className="hover:text-pink-900">
+                Gallery
+                </Link>
+              </li>
+              <li>
+                <Link to="/doctors" className="hover:text-pink-900">
+                 Our Doctors
                 </Link>
               </li>
               <li>

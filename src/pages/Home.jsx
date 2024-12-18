@@ -22,10 +22,10 @@ export const Home = () => {
 {/* <IconCard /> */}
 <HomeServices />
 <WhyChoose />
-<div className='md:flex md:flex-row justify-center border-t md:mt-3 '>
+{/* <div className='md:flex md:flex-row justify-center border-t md:mt-3 '>
 <IVFInfo/>
 <IVFProcess />
-</div>
+</div> */}
 <OurSpecialist />
 
 <FAQ />

@@ -47,6 +47,10 @@ export const navbarData = [
       "link": "/facilities"
     },
     {
+      "label": "Gallery",
+      "link": "/gallery"
+    },
+    {
       "label": "Cashless Treatment",
       "link": "/cashless-treatment",
       submenu: [
@@ -62,10 +66,7 @@ export const navbarData = [
     },
     
    
-    {
-      "label": "Gallery",
-      "link": "/gallery"
-    },
+    
     {
       "label": "Contact",
       "link": "/contact"

@@ -14,7 +14,7 @@ const AppoinmentForm = () => {
                     Book appoinment
                 </h1>
                 <p className='mb-4'>
-                    Mollitia dicta commodi est recusandae iste, natus eum asperiores corrupti qui velit . Iste dolorum atque similique praesentium soluta.
+                Fill out the form with your details and preferred time. Our team will confirm your booking shortly.
                 </p>
 
 

@@ -8,9 +8,9 @@ export const headings = [
   {
     name: "Facilities",
   },
-  {
-    name: "Rooms",
-  },
+  // {
+  //   name: "Rooms",
+  // },
 ];
 
 export const All = [
@@ -30,7 +30,32 @@ export const All = [
     link: "/about",
   },
   {
-    img: "/assets/gallery/all4.JPG",
+    img: "/assets/gallery/all4.avif",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/all5.avif",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/all6.avif",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/all7.JPG",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/all8.JPG",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/all9.avif",
     type: "img",
     link: "/about",
   },
@@ -48,7 +73,17 @@ export const ClinicalInfrastructure = [
     link: "/about",
   },
   {
-    img: "/assets/gallery/all4.JPG",
+    img: "/assets/gallery/all4.avif",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/infra2.avif",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/infra3.avif",
     type: "img",
     link: "/about",
   },
@@ -86,31 +121,40 @@ export const Facilities = [
     type: "img",
     link: "/about",
   },
- 
+  {
+    img: "/assets/gallery/facility7.avif",
+    type: "img",
+    link: "/about",
+  },
+  {
+    img: "/assets/gallery/facility8.avif",
+    type: "img",
+    link: "/about",
+  },
 ];
-export const Rooms = [
-  {
-    img: "/assets/gallery/tool1.avif",
-    type: "img",
-    link: "/about",
-  },
-  {
-    img: "/assets/gallery/tool2.avif",
-    type: "img",
-    link: "/about",
-  },
-  {
-    img: "/assets/gallery/tool3.avif",
-    type: "img",
-    link: "/about",
-  },
-  {
-    img: "/assets/gallery/tool4.avif",
-    type: "img",
-    link: "/about",
-  },
+// export const Rooms = [
+//   {
+//     img: "/assets/gallery/tool1.avif",
+//     type: "img",
+//     link: "/about",
+//   },
+//   {
+//     img: "/assets/gallery/tool2.avif",
+//     type: "img",
+//     link: "/about",
+//   },
+//   {
+//     img: "/assets/gallery/tool3.avif",
+//     type: "img",
+//     link: "/about",
+//   },
+//   {
+//     img: "/assets/gallery/tool4.avif",
+//     type: "img",
+//     link: "/about",
+//   },
  
-];
+// ];
 
 export const video = [
   {

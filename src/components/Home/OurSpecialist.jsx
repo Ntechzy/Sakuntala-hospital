@@ -10,7 +10,7 @@ const doctors = [
       "M.B.B.S - 1978",
       "D.C.H - 1980"
     ],
-    photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
+    photo: "/assets/gallery/ramawadh.png"
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const doctors = [
       "M.B.B.S - 2012",
       "M.S - 2019"
     ],
-    photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
+    photo: "/assets/gallery/dranand.png"
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const doctors = [
       "M.B.B.S - 2012",
       "D.N.B - 2016"
     ],
-    photo: "https://t3.ftcdn.net/jpg/02/60/04/08/360_F_260040863_fYxB1SnrzgJ9AOkcT0hoe7IEFtsPiHAD.jpg"
+    photo: "/assets/gallery/dranshu.png"
   },
 
 
