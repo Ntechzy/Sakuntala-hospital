@@ -4,12 +4,21 @@ import { Link } from "react-router-dom";
 const HomeBanner = () => {
   return (
     <div className="max-w-screen md:h-screen mx-auto bg-white rounded-lg overflow-hidden relative">
-      {/* Header Section */}
+    
 
-      {/* Doctor Section */}
-      <div className=" flex flex-col md:flex-row items-center justify-between object-cover mt-20   relative space-y-4 md:space-y-0 md:bg-url('/assets/gallery/Banner.jpg')">
-        {/* Doctor's Image */}
-        <img className="" src="/assets/gallery/Banner.jpg" alt="" />
+      <div className="flex flex-col md:flex-row items-center justify-between object-cover mt-20 relative space-y-4 md:space-y-0">
+        
+        <img
+          className="md:hidden w-full h-full object-cover"
+          src="/assets/gallery/mobileBanner.jpg"
+          alt="Mobile Banner"
+        />
+
+        <img
+          className="hidden md:block w-full h-full object-cover"
+          src="/assets/gallery/Banner.jpg"
+          alt="Desktop Banner"
+        />
       </div>
 
       {/* Footer */}
@@ -18,7 +27,6 @@ const HomeBanner = () => {
       </div> */}
 
       {/* WhatsApp Icon */}
-      
     </div>
   );
 };

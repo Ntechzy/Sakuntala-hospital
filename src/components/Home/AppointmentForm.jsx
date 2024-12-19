@@ -6,7 +6,7 @@ const AppoinmentForm = () => {
 
 
             <div className='relative w-full md:w-[90%] overflow-hidden md:p-0 p-[10px] bg-cover'>
-                <img src="/assets/appointment.avif" alt="" className='w-[90%] m-auto h-[465px] bg-black' />
+                <img src="/assets/appointment.avif" alt="" className='w-[90%] m-auto md:h-[465px] rounded h-[250px] bg-black' />
 
             </div>
             <div className='w-full md:w-1/2 px-[15px] flex flex-col leading-[1.6] mt-1 md: md:p-0 p-[24px]'>
