@@ -7,7 +7,7 @@ const IVFSpecialist = () => {
   return (
     <>
       <div>
-        <div className=" absolute md:top-1/2 top-[270px] p-2 left-11 w-[86.3%] md:w-[500px]  md:left-28 flex flex-col  bg-pink-700 md:py-16 md:px-11  text-white">
+        <div className=" absolute md:top-1/2 top-[270px] p-2 left-11 w-[86.3%] md:w-[500px]  md:left-28 flex flex-col  bg-[#a03272] md:py-16 md:px-11  text-white">
             <div className="md:text-4xl font-semibold">
             Dr. Shakuntala Yadav
             </div>

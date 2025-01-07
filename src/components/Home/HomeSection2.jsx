@@ -14,12 +14,12 @@ const HomeSection2 = () => {
     {
       icon: "",
       title: "Years of Experience",
-      number: "97"
+      number: "10"
     },
     {
       icon: "",
       title: "IVF Success Rate",
-      number: "97"
+      number: "100"
     },
   ]
   return (
@@ -40,7 +40,7 @@ const HomeSection2 = () => {
 
               <ScrollTrigger onEnter={() => setCount(true)}>
                 <div className='text-[44px] text-white font-extrabold'>
-                  {count && <CountUp end={pro.number} duration={3} delay={0.5} />}  +
+                  {count && <CountUp end={pro.number} duration={4} delay={0.5} />}  +
                 </div>
               </ScrollTrigger>
 

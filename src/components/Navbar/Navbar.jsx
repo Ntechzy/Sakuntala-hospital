@@ -70,7 +70,7 @@ const Navbar = () => {
               key={index}
               className="relative group"
               onMouseEnter={() => setOpenSubmenu(index)} 
-              onMouseLeave={() => setOpenSubmenu(null)} // Close submenu when not hovered
+              onMouseLeave={() => setOpenSubmenu(null)} 
             >
               <Link
                 to={item.link}

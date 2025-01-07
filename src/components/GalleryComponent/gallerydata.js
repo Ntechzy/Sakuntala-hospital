@@ -82,11 +82,11 @@ export const ClinicalInfrastructure = [
     type: "img",
     link: "/about",
   },
-  {
-    img: "/assets/gallery/infra3.avif",
-    type: "img",
-    link: "/about",
-  },
+  // {
+  //   img: "/assets/gallery/infra3.avif",
+  //   type: "img",
+  //   link: "/about",
+  // },
 ];
 export const Facilities = [
   {
