@@ -36,7 +36,7 @@ const Testimonial = () => {
                 className="w-full relative md:max-w-[1140px] sm:max-w-[720px] m-auto"
 
             >
-                <div className='mb-[55px] md:w-[58.33%] m-auto flex-col text-center'>
+                <div className='mb-[55px] md:w-[58.33%] m-auto flex-col text-center '>
                     <h3 className='text-[12px] md:text-[16px] font-bold text-[#2b8bb1] mb-[20px]'>
                         Testimonials
                     </h3>
@@ -49,7 +49,7 @@ const Testimonial = () => {
 
                 <Slider {...settings}>
                     {testimonials.map((testimonial, index) => (
-                        <div key={index} className="p-[30px] mb-[20px] rounded-lg bg-white">
+                        <div key={index} className="p-[30px] mb-[20px] rounded-lg bg-white border-2">
                             <div className="flex items-center mb-4">
                                 <img
                                     src={testimonial.photo}

@@ -32,7 +32,7 @@ const HomeSection2 = () => {
           </h1>
         </div>
       </div>
-      <div className=' grid sm:grid-cols-3 items-center m-auto  gap-3 pt-4 pb-2  w-full sm:justify-center '>
+      <div className=' grid sm:grid-cols-3 items-center m-auto  gap-3 pt-4 pb-2 px-9 w-full sm:justify-center '>
         {
           data.map((pro, i) => (
             <div key={i} className='flex flex-col gap-2 w-full justify-center items-center bg-[#a83679] py-7 rounded-lg'>
